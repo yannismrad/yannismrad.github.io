@@ -60,11 +60,11 @@ a img{border:0px;}
 	padding-top:40px;
 	float:left;
 }
-#header #main-menu{float:right; padding-top:45px;}
+#header #main-menu{float:left; padding-top:45px;}
 #header #main-menu li{
 	float:left;
 	list-style:none;
-	margin-left:23px;
+	margin-left: 16px;
 	font: 400 16px/20px 'Bree Serif', Georgia, serif;
 }
 

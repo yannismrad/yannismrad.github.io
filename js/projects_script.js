@@ -39,7 +39,10 @@ function loadContent()
 			type: "GET", 
 			async:"false",
 			url: "project_desc.xml", 
-			dataType: "xml", 
+			dataType: "xml",
+			xhrFields: {
+				withCredentials: true
+			},
 			success: function(data){
 				processData(data);
 			},
@@ -50,10 +53,10 @@ function loadContent()
 		});
 	}
 	
-	/*else
+	else
 	{
-	
-	} */
+		//TODO
+	}
 	
 }
 

@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <title>Yannis M'RAD - Projets</title>
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
@@ -45,26 +46,5 @@
 				
 			</div>	
 		</div>
-
-
- <!-- The JavaScript -->  
-        <script type="text/javascript">
-    		$(function() {
-                $('#main-menu li a').bind('click',function(event){
-                    var $anchor = $(this);
-                    
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1500,'easeInOutExpo');
-
-                    event.preventDefault();
-                });
-            });
-			
- 			 $(document).ready(function(){
-    		$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false, deeplinking: false});
-  			});
-
-        </script>
 </body>
 </html>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<projects>
+
+<!--serious game to learn maths -->
+<project id="sgtlm">
+	<name>Serious Game to Learn Maths</name>
+	<image>images/work/sgtlm.png</image>
+	<description lang="fr">
+	<![CDATA[
+	Serious game réalisé dans le cadre du cours Interaction 3D et Réalité Virtuelle de l'UQAC.
+	Un bras haptique (Novint Falcon) est utilisé dans le cadre de ce jeu afin de manipuler des éléments interactifs et de ressentir les forces de contact.
+	L'objectif est d'enseigner des notions de mathématiques de niveau secondaire aux utilisateurs à travers la résolution d'énigmes.
+	<br /><br />
+
+	J'ai travaillé principalement sur les mécaniques de gameplay, en particulier :
+	<ul>
+		<li>Saisie / Lâcher des objets interactifs</li>
+		<li>Rotations d'objets pour certaines énigmes</li>
+		<li>Logique de validation des énigmes</li>
+	</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+		<![CDATA[
+	Serious game developed for the 3D interaction & Virtual Reality course (UQAC).
+	An haptic device (Novint Falcon) is used to manipulate interactive game elements and feel various forces.
+	<br />The goal is to teach notions of maths (secondary level) to the users by resolving four puzzles.
+	<br />
+
+	I have worked on the gameplay elements, especially :
+	<ul>
+		<li>Grab / drop interactive elements</li>
+		<li>Object rotation (for specific puzzles)</li>
+		<li>Puzzles' validation system</li>
+	</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="github">https://github.com/Shask/VR-Serious-Game-to-learn-math</link>
+		<link name="youtube"></link>
+	</links>
+</project>
+
+<!--mid term exam -->
+<project id="mte">
+	<name>MidTerm Exam</name>
+	<image>images/work/mte.png</image>
+	<description lang="fr">
+	<![CDATA[
+	Jeu réalisé durant la WonderJam hiver 2015 à l'UQAC.
+	<br />Il s'agit d'un jeu de tir rythmique en 2,5D répondant au thème "Plus de peur que de mal".
+	<br /> Notre équipe était constituée de 5 programmeurs et une artiste.
+	<br/>J'ai travaillé sur les points suivants :
+
+	<ul>
+		<li>Placement aléatoire des élèves dans la salle de classe (nombre & disposition)</li>
+		<li>Gestion des feedbacks (sonores principalement)</li>
+		<li>Elements de gameplay dynamiques (musique dynamique)</li>
+		<li>Gestion de l'interface graphique et menus/écrans</li>		
+	</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+	<![CDATA[
+	This game has been realised during the 2015 Winter WonderJam at the UQAC.
+	<br />It's a rythmical shooter game that matches the following theme : "More fear than harm".
+	<br />Our team was composed of five developers and one artist.
+	<br/>I have worked on the following elements :
+	
+	<ul>
+		<li>Random spawning of the students into the classroom (number, setting of the class)</li>
+		<li>Feedback management (especially sounds)</li>
+		<li>Dynamic gameplay elements (dynamic music, evolving with a "stress level")</li>
+		<li>User interface and menus</li>		
+	</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="github">https://github.com/Steguer/GreatParanoidTeacher</link>
+		<link name="youtube"></link>
+	</links>
+</project>
+
+<!--daynight killer -->
+<project id="dnk">
+	<name>DayNight Killer</name>
+	<image>images/work/dnk.png</image>
+	
+	<description lang="fr">
+	<![CDATA[
+		Projet développé dans le cadre du cours de Conception de jeux vidéos à l'UQAC.
+		<br />C'est un jeu de type survival que nous avons réalisé en équipe de trois, sous le moteur Unity.
+		<br/> Mes tâches étaient les suivantes :
+	
+		<ul>
+			<li>Réalisation des mécanismes de jeu générales (joueur, IA) </li>
+			<li>Intégration de feedbacks (musiques, sons notamment)</li>
+			<li>Création de l'interface graphique (menus et HUD) </li>		
+		</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+	<![CDATA[
+		Game developed for the Video Games Development course at the UQAC.
+		<br />This is an asymetric survival game, realised with Unity. Our team was composed of three developers.
+		<br/>These were my tasks :
+
+		<ul>
+			<li>General gameplay development (player controls, AI behaviour, enemy AI)</li>
+			<li>Feedbacks (musics, sounds)</li>
+			<li>User interface (HUD, menus)</li>		
+		</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="github">https://github.com/yannismrad/DayNightKiller</link>
+		<link name="youtube">http://www.youtube.com/embed/XGSy3_Czz8k</link>
+	</links>
+</project>
+
+<!--halo monitor defense-->
+<project id="hmd">
+	<name>Halo Monitor Defense</name>
+	<image>images/work/hmd.png</image>
+	
+	<description lang="fr">
+	<![CDATA[
+		Projet de fin d'année réalisé durant ma licence en informatique à l'Université de Limoges. 
+		L'objectif était de réaliser une application mobile en 3D, sous une forme de notre choix.
+		Il s'agit ici d'un prototype de Tower Defense que j'ai développé seul sur Android à l'aide d'OpenGL ES et de la librairie JPCT-AE.
+		<br />Voici les principaux mécanismes qui y sont implémentés :
+		
+		<ul>
+			<li>Sélection de "blocs" au toucher pour y construire un type de tour à choisir parmi plusieurs</li>
+			<li>Génération des ennemis</li>
+			<li>Pathfinding des ennemis</li>
+			<li>Détection des ennemis par les tours et phase de tir</li>
+		</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+	<![CDATA[
+		This is a project I have realised during my bachelor's degree in computer science at the University of Limoges.
+		The purpose of this project was to develop a 3D mobile application, which could be a game or anything else.						
+		<br/>Here, it's a Tower Defense game prototype that I have developed alone for Android platforms, using OpenGL ES and the JPCT-AE library.
+		<br/>These are the different main gameplay elements that have been developed :
+		
+		<ul>
+			<li>Building different towers (by selecting a spot)</li>
+			<li>Enemy spawning mechanism</li>
+			<li>Basic enemy pathfinding (chained-list system).
+			<li>Enemy detection and shooting phase mechanisms (towers)</li>
+		</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="github">https://github.com/yannismrad/HaloMonitorDefense</link>
+		<link name="youtube"></link>
+	</links>
+</project>
+
+
+
+
+
+<!--"Default" project (for wrong urls) -->
+<project id="error">
+	<name>?</name>
+	<description lang="en">
+		Project not found !
+	</description>
+	<description lang="fr">
+		Ce projet n'existe pas !
+	</description>
+	
+	<links>
+		<link name="github"></link>
+		<link name="youtube"></link>
+	</links>
+</project>
+
+</projects>

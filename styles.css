@@ -157,6 +157,14 @@ a img{border:0px;}
 	margin:0px 20px 15px 0px;
 	padding:0px;
 }
+
+#work .col {
+	width:235px;
+	float:left;
+	list-style-position: inside;
+}
+#work .col-mid{margin:0px 40px;}
+
 #work #work-thumbs img
 {
 	height:175px;

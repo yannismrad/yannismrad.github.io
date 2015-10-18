@@ -55,7 +55,7 @@ function loadContent()
 	
 	else
 	{
-		//TODO
+		loadIEVersion();
 	}
 	
 }
@@ -143,6 +143,13 @@ function setReturnLink()
 		$("#returnToResumeLink").attr("href","index_eng.htm");
 	
 }
+
+/**Load the IE version **/
+function loadIEVersion()
+{
+	window.location.href="projects_ie.html?lang="+language+"&proj="+projectId;
+}
+
 
 
 

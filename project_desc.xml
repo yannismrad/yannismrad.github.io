@@ -124,6 +124,47 @@
 	</links>
 </project>
 
+<!--super shoot land -->
+<project id="ssl">
+	<name>Super Shoot Land</name>
+	<image>images/work/ssl.png</image>
+	
+	<description lang="fr">
+	<![CDATA[
+		Jeu développé dans le cadre du cours de Programmation orientée objet à l'UQAC.
+		<br />Il s'agit d'un jeu de plateforme / shooter inspiré de Super Smash Land développé en Java
+		<br />avec la librairie JSFML.
+
+		<br/> J'ai travaillé principalement sur la gestion des inputs :
+	
+		<ul>
+			<li>Binding de touches via un parsing de fichier XML de configuration</li>
+			<li>Gestion des touches pour deux joueurs</li>	
+			<li>Wrapper pour simplifier l'accès aux inputs JSFML pour vérifier les actions des joueurs</li>
+		</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+	<![CDATA[
+		Game developed for the Object Oriented Programming course at the UQAC.
+		<br />It's a platformer/shooter Java game inspired from Super Smash Land, it uses the JSFML library.
+		<br/>I have mainly worked on the input management :
+
+		<ul>
+			<li>Key binding through a parsed XML configuration file</li>
+			<li>Two players key bindings</li>
+			<li>Wrapper class to check each player's actions more easily</li>		
+		</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="github">https://github.com/FuriousCatInteractive/Super-Shoot-Land</link>
+		<link name="youtube"></link>
+	</links>
+</project>
+
 <!--halo monitor defense-->
 <project id="hmd">
 	<name>Halo Monitor Defense</name>

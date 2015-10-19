@@ -132,8 +132,7 @@
 	<description lang="fr">
 	<![CDATA[
 		Jeu développé dans le cadre du cours de Programmation orientée objet à l'UQAC.
-		<br />Il s'agit d'un jeu de plateforme / shooter inspiré de Super Smash Land développé en Java
-		<br />avec la librairie JSFML.
+		<br />Il s'agit d'un jeu de plateforme / shooter inspiré de Super Smash Land développé en Java avec la librairie JSFML.
 
 		<br/> J'ai travaillé principalement sur la gestion des inputs :
 	

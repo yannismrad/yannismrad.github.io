@@ -107,11 +107,17 @@ function processData(data)
 	
 	//github icon
 	var gitLink ='<a href="'+projectGitLink+'" title="'+projectName+' page"><img src="'+githubIcon+'" id="githubIcon"/></a>';
-	var gitText = '<h2><b>GitHub page</b></h2>';
-	var ytImgTag="", ytText="<h1><b>Video</b></h1>";
+	var gitText = '<h1><b>GitHub repository</b></h1>';
+	var divider = '<div class="bottom-divider"></div>';
+	
+
+	
 	//youtube video
+	var ytImgTag="", ytText="";
+	
 	if(projectYTLink.length > 0)
 	{
+		ytText = "<h1><b>Video</b></h1>";
 		ytImgTag = '<a href="https://www.youtube.com/watch?v='+projectYTLink+'" target="_blank"><img height="230px" src="http://img.youtube.com/vi/'+projectYTLink+'/0.jpg" alt="Video"/> </a>';
 	}
 		
@@ -124,6 +130,7 @@ function processData(data)
 	{
 		$("#linksDiv").append(ytText);
 		$("#linksDiv").append(ytImgTag);
+		$("#linksDiv").append(divider);
 		$("#linksDiv").append(gitText);
 		$("#linksDiv").append(gitLink); //project github link
 	}

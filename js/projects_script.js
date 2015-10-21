@@ -96,7 +96,7 @@ function processData(data)
 	//Get the github link
 	projectGitLink= linksNode.find('link[name="github"]').text();
 
-	//Get the youtube link
+	//Get the youtube link ID
 	projectYTLink= linksNode.find('link[name="youtube"]').text();
 	
 	//image tag (only if there is a link)
@@ -108,10 +108,12 @@ function processData(data)
 	//github icon
 	var gitLink ='<a href="'+projectGitLink+'" title="'+projectName+' page"><img src="'+githubIcon+'" id="githubIcon"/></a>';
 	var gitText = '<h2><b>GitHub page</b></h2>';
-	
+	var ytImgTag="", ytText="<h1><b>Video</b></h1>";
 	//youtube video
 	if(projectYTLink.length > 0)
-		var ytIframeTag = '<iframe width="420" height="315" src="'+projectYTLink+'"> </iframe>';
+	{
+		ytImgTag = '<a href="https://www.youtube.com/watch?v='+projectYTLink+'" target="_blank"><img height="230px" src="http://img.youtube.com/vi/'+projectYTLink+'/0.jpg" alt="Video"/> </a>';
+	}
 		
 	//Append the content to the HTML tags
 	$("#gameName").append(projectName); //project name
@@ -120,7 +122,8 @@ function processData(data)
 	
 	if(error == false)
 	{
-		$("#linksDiv").append(ytIframeTag);
+		$("#linksDiv").append(ytText);
+		$("#linksDiv").append(ytImgTag);
 		$("#linksDiv").append(gitText);
 		$("#linksDiv").append(gitLink); //project github link
 	}

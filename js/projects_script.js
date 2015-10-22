@@ -108,7 +108,7 @@ function processData(data)
 	//github icon
 	var gitLink ='<a href="'+projectGitLink+'" title="'+projectName+' page"><img src="'+githubIcon+'" id="githubIcon"/></a>';
 	var gitText = '<h1><b>GitHub repository</b></h1>';
-	var divider = '<div class="bottom-divider"></div>';
+	var divider = '';
 	
 
 	
@@ -119,6 +119,7 @@ function processData(data)
 	{
 		ytText = "<h1><b>Video</b></h1>";
 		ytImgTag = '<a href="https://www.youtube.com/watch?v='+projectYTLink+'" target="_blank"><img height="230px" src="http://img.youtube.com/vi/'+projectYTLink+'/0.jpg" alt="Video"/> </a>';
+		divider = '<div class="bottom-divider"></div>';
 	}
 		
 	//Append the content to the HTML tags

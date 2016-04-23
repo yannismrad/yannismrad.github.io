@@ -2,6 +2,46 @@
 <projects>
 
 <!--serious game to learn maths -->
+<project id="fod">
+	<name>Fly or Die</name>
+	<image>images/work/flyordie.png</image>
+	<description lang="fr">
+	<![CDATA[
+	Jeu de duel "homme VS mouche" en réalité virtuelle développé sous Unity à l'occasion de la GlobalGameJam 2016.
+	Un joueur contrôle une mouche à la manette tandis qu'un autre possède un casque et un wand (HTC Vive) servant de tapette à mouche.
+	Le but de la mouche est de s'enfuir par la fenêtre tandis que le joueur au Vive doit la tuer avec son arme !
+	<br /><br />
+
+	J'ai travaillé sur des mécaniques de gameplay liées au joueur humain :
+	<ul>
+		<li>Interactions au niveau de la tapette</li>
+		<li>Pots de confiture à casser pour répandre de la confiture servant de piège</li>
+		<li>Images / illustrations pour le GUI</li>
+	</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+		<![CDATA[
+	Fly or Die is a VR duel game developed during the GlobalGameJam 2016, using Unity.
+	A player controls a fly with gamepad while another uses an HMD and a wand (HTC Vive in our case) as a fly swatter.
+	Fly player's goal is to escape through the window while the human has to kill him !
+	<br />
+
+	I have worked on gameplay elements related to the human player :
+	<ul>
+		<li>Swatter interactions</li>
+		<li>Jam pots to break, to trap the fly when the jam is spilled</li>
+		<li>Images / GUI elements</li>
+	</ul>
+	]]>
+	</description>
+	
+	<links>
+	</links>
+</project>
+
+<!--serious game to learn maths -->
 <project id="sgtlm">
 	<name>Serious Game to Learn Maths</name>
 	<image>images/work/sgtlm.png</image>

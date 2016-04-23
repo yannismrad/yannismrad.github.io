@@ -106,8 +106,11 @@ function processData(data)
 	var textTag = '<p id="gameDescription">'+projectDescription+'</p>'
 	
 	//github icon
-	var gitLink ='<a href="'+projectGitLink+'" title="'+projectName+' page"><img src="'+githubIcon+'" id="githubIcon"/></a>';
-	var gitText = '<h1><b>GitHub repository</b></h1>';
+	if(projectGitLink.length > 0)
+	{
+		var gitLink ='<a href="'+projectGitLink+'" title="'+projectName+' page"><img src="'+githubIcon+'" id="githubIcon"/></a>';
+		var gitText = '<h1><b>GitHub repository</b></h1>';
+	}
 	var divider = '';
 	
 

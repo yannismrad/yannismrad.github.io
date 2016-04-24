@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <projects>
 
-<!--serious game to learn maths -->
+<!--fly or die -->
 <project id="fod">
 	<name>Fly or Die</name>
-	<image>images/work/flyordie.png</image>
+	<image>images/work/fod.png</image>
 	<description lang="fr">
 	<![CDATA[
 	Jeu de duel "homme VS mouche" en réalité virtuelle développé sous Unity à l'occasion de la GlobalGameJam 2016.
-	Un joueur contrôle une mouche à la manette tandis qu'un autre possède un casque et un wand (HTC Vive) servant de tapette à mouche.
-	Le but de la mouche est de s'enfuir par la fenêtre tandis que le joueur au Vive doit la tuer avec son arme !
+	Un joueur contrôle une mouche à la manette tandis qu'un autre utilise un casque et un wand (HTC Vive) pour la chasser.
+	Le but de la mouche est de s'enfuir par la fenêtre tandis que le joueur au Vive doit l'écraser !
 	<br /><br />
 
 	J'ai travaillé sur des mécaniques de gameplay liées au joueur humain :
@@ -33,6 +33,48 @@
 		<li>Swatter interactions</li>
 		<li>Jam pots to break, to trap the fly when the jam is spilled</li>
 		<li>Images / GUI elements</li>
+	</ul>
+	]]>
+	</description>
+	
+	<links>
+	</links>
+</project>
+
+<!--Cubic run -->
+<project id="cr">
+	<name>Cubic Run</name>
+	<image>images/work/cr.png</image>
+	<description lang="fr">
+	<![CDATA[
+	Runner game développé sous Unity pour le cours de Développement d'extensions logicielles, en Master 2 ISICG
+	Le personnage se contrôle à la souris et doit sauter de plateforme en plateforme pour récolter des orbes tout
+	en évitant des obstacles et en fuyant son poursuivant.
+	<br /><br />
+
+	Voici les principales fonctionnalités que j'ai mises en place : 
+	<ul>
+		<li>Génération aléatoire de plateformes choisies dans un pool de prefabs</li>
+		<li>Contrôles du personnage</li>
+		<li>Scoring, compteur de temps</li>
+		<li>Eléments de gameplay dynamiques (vitesse variable, musique dynamique)</li>
+	</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+		<![CDATA[
+	This is a runner game I have made with Unity for the software plugin course during my Master 2 ISICG.
+	The character is controlled with the mouse and has to collect orbs while dodging obstacles and being chased
+	by a monster.
+	<br />
+
+	The main features I have worked on are :
+	<ul>
+		<li>Random spawning of platforms, chosen in a prefab pool</li>
+		<li>Character controls</li>
+		<li>Scoring & timing</li>
+		<li>Dynamic gameplay elements (scrolling speed increasing when scoring, dynamic music)</li>
 	</ul>
 	]]>
 	</description>

@@ -5,8 +5,8 @@ body{
 	color: #151515;
 }
 h1{font: 400 58px/60px 'TF2 Build', 'Bree Serif', Georgia, serif; color: #151515;}
-h2{font: 400 18px/22px 'Bree Serif', Georgia, serif; color: #151515;}
-h3{font: 400 14px/16px 'Bree Serif', Georgia, serif; font-weight : bold; color: #151515;}
+h2{font: 400 18px/22px 'Open Sans Bold', Georgia, serif; color: #151515;}
+h3{font: 400 14px/16px 'Open Sans Bold', Georgia, serif; font-weight : bold; color: #151515;}
 ul{margin:0px; padding:0px;}
 a {text-decoration:none; color: lightGray;}
 a:hover {color:white;}
@@ -65,7 +65,7 @@ a img{border:0px;}
 	float:left;
 	list-style:none;
 	margin-left: 16px;
-	font: 400 16px/20px 'Bree Serif', Georgia, serif;
+	font: 400 16px/20px 'Open Sans', Georgia, serif;
 }
 
 /****************************************************/
@@ -256,6 +256,16 @@ a img{border:0px;}
 @font-face {
     font-family: 'TF2 Build';
     src: url('css/tf2build.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('css/OpenSans.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('css/OpenSans-Bold.ttf');
 }
 
 .divider{

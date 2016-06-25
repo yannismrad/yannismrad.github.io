@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <projects>
 
+
+<!--fly or die -->
+<project id="vrs2">
+	<name>Shadow 2 (VR)</name>
+	<image>images/work/vrs2.png</image>
+	<description lang="fr">
+	<![CDATA[
+	Shadow 2 est une application que j'ai développée durant mon stage chez MiddleVR et qui vise à présenter différentes fonctionnalités du plugin 
+	MiddleVR pour Unity. <br />
+	L'application consiste à explorer un appartement en interagissant avec différents objets. <br />
+
+	Plusieurs interactions sont proposées : 
+	<ul>
+		<li>Navigation type World in Miniature (maquette de téléportation)</li>
+		<li>Manipulations à une main (mapping direct)</li>
+		<li>Manipulations à deux mains contextuelles (jouer de la guitare, utiliser la maquette WIM...) </li>
+		<li>Interactions diverses (ex : ouvrir une porte, dessiner avec un crayon)
+	</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+		<![CDATA[
+	Shadow 2 is a VR application that I have developed during my internship at MiddleVR.
+	Its goal is to show different functionnalities provided with the MiddleVR For Unity plugin. <br/>
+	In this application, you can explore a flat and interact with several items, with different types of interaction. <br />
+
+	Features :
+	<ul>
+		<li>World in Miniature navigation</li>
+		<li>Single-handed manipulation (direct mapping)</li>
+		<li>Dual-handed manipulations (specific cases, like playing a guitar)</li>
+		<li>Other interactions (open a door, draw with a pen...)</li>
+	</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="youtube">2ogBzicLGBs</link>
+	</links>
+</project>
+
 <!--fly or die -->
 <project id="fod">
 	<name>Fly or Die</name>

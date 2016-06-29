@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <projects>
 
+<!--Gazeduc / GRT Gaz -->
+<project id="grtgaz">
+	<name>Gazeduc (GRTgaz)</name>
+	<image>images/work/grtgaz.png</image>
+	<description lang="fr">
+	<![CDATA[
+	Gazeduc est une application en réalité virtuelle développée par MiddleVR pour GRTgaz sur laquelle j'ai travaillé durant mon stage de Master 2. <br />
+	C'est une application développée sous Unity, fonctionnant sous HTC Vive,  qui a pour objectif de former des techniciens aux opérations sur des postes de détente de gaz.<br />
+	Elle comporte une simulation physique réaliste de la pression du gaz en différents points de l'installation, l'aspect VR permet de manipuler différents éléments permettant
+	d'agir sur cette simulation <br />
+	Il est possible de se déplacer à pieds dans une zone définie puis de faire déplacer cette dernière pour aller plus loin.<br />
+	La manipulation, de type main virtuelle, permet par exemple d'ouvrir des robinets, des vannes et de saisir des manomètres. <br />
 
-<!--fly or die -->
+	J'ai travaillé en particulier sur les points suivants : 
+	<ul>
+		<li>Feedbacks pour la navigation (zone de tracking dynamique en pointillées, indication de vitesse)</li>
+		<li>Tutoriel pour apprendre les différentes interactions possibles</li>
+	</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+		<![CDATA[
+	Gazeduc is a VR application developed by MiddleVR for GRTgaz I have been working on during my Master2's internship. <br />
+	Developed with Unity for the HTC Vive, it is a training application that teaches engineers how to operate on specific gas distribution facilities. <br />
+	With the VR, you can interact with various elements to modify the realistic gas simulation running behind. <br />
+	You can walk inside a tracking area (provided by the Vive) and even move farther by reaching its edges. <br />
+	Direct virtual hand manipulation allows you to manipulate the different objects (taps, valves, manometers etc). 
+	<br /><br />
+
+	I have worked on the following elements :
+	<ul>
+		<li>Navigation feedbacks (visual representation of the tracking area and speed cues)</li>
+		<li>Tutorial to learn how to interact within the application</li>
+	</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="youtube">996t5RGh-WE</link>
+	</links>
+</project>
+
+<!--Shadow 2 -->
 <project id="vrs2">
 	<name>Shadow 2 (VR)</name>
 	<image>images/work/vrs2.png</image>
@@ -17,7 +59,7 @@
 		<li>Navigation type World in Miniature (maquette de téléportation)</li>
 		<li>Manipulations à une main (mapping direct)</li>
 		<li>Manipulations à deux mains contextuelles (jouer de la guitare, utiliser la maquette WIM...) </li>
-		<li>Interactions diverses (ex : ouvrir une porte, dessiner avec un crayon)
+		<li>Interactions diverses (ex : ouvrir une porte, dessiner avec un crayon) </li>
 	</ul>
 	]]>
 	</description>

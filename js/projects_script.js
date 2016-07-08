@@ -152,7 +152,7 @@ function processData(data)
 	
 	if(error == false)
 	{
-		if(screenshotsTab != null && screenshotsTab.length > 0)
+		/*if(screenshotsTab != null && screenshotsTab.length > 0)
 		{
 			$("#linksDiv").append(screenText);
 			
@@ -162,7 +162,7 @@ function processData(data)
 				$("#linksDiv").append(imgTag);
 			}
 		}
-		$("#linksDiv").append(divider);
+		$("#linksDiv").append(divider); */
 		$("#linksDiv").append(ytText);
 		$("#linksDiv").append(ytImgTag);
 		$("#linksDiv").append(divider);

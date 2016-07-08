@@ -5,6 +5,7 @@
 <project id="grtgaz">
 	<name>Gazeduc (GRTgaz)</name>
 	<image>images/work/grtgaz.png</image>
+	<screenshotFolder>images/screenshots/grtgaz/</screenshotFolder>
 	<description lang="fr">
 	<![CDATA[
 	Gazeduc est une application en réalité virtuelle développée par MiddleVR pour GRTgaz sur laquelle j'ai travaillé durant mon stage de Master 2. <br />
@@ -48,6 +49,7 @@
 <project id="vrs2">
 	<name>Shadow 2 (VR)</name>
 	<image>images/work/vrs2.png</image>
+	<screenshotFolder>images/screenshots/vrs2/</screenshotFolder>
 	<description lang="fr">
 	<![CDATA[
 	Shadow 2 est une application que j'ai développée durant mon stage chez MiddleVR et qui vise à présenter différentes fonctionnalités du plugin 
@@ -89,6 +91,7 @@
 <project id="fod">
 	<name>Fly or Die</name>
 	<image>images/work/fod.png</image>
+	<screenshotFolder>images/screenshots/fod/</screenshotFolder>
 	<description lang="fr">
 	<![CDATA[
 	Jeu de duel "homme VS mouche" en réalité virtuelle développé sous Unity à l'occasion de la GlobalGameJam 2016.
@@ -129,6 +132,7 @@
 <project id="cr">
 	<name>Cubic Run</name>
 	<image>images/work/cr.png</image>
+	<screenshotFolder>images/screenshots/cr/</screenshotFolder>
 	<description lang="fr">
 	<![CDATA[
 	Runner game développé sous Unity pour le cours de Développement d'extensions logicielles, en Master 2 ISICG
@@ -171,6 +175,7 @@
 <project id="sgtlm">
 	<name>Serious Game to Learn Maths</name>
 	<image>images/work/sgtlm.png</image>
+	<screenshotFolder></screenshotFolder>
 	<description lang="fr">
 	<![CDATA[
 	Serious game réalisé dans le cadre du cours Interaction 3D et Réalité Virtuelle de l'UQAC.
@@ -213,6 +218,7 @@
 <project id="mte">
 	<name>MidTerm Exam</name>
 	<image>images/work/mte.png</image>
+	<screenshotFolder></screenshotFolder>
 	<description lang="fr">
 	<![CDATA[
 	Jeu réalisé durant la WonderJam hiver 2015 à l'UQAC.
@@ -255,6 +261,7 @@
 <project id="dnk">
 	<name>DayNight Killer</name>
 	<image>images/work/dnk.png</image>
+	<screenshotFolder></screenshotFolder>
 	
 	<description lang="fr">
 	<![CDATA[
@@ -294,6 +301,7 @@
 <project id="ssl">
 	<name>Super Shoot Land</name>
 	<image>images/work/ssl.png</image>
+	<screenshotFolder>images/screenshots/ssl/</screenshotFolder>
 	
 	<description lang="fr">
 	<![CDATA[
@@ -334,6 +342,7 @@
 <project id="hmd">
 	<name>Halo Monitor Defense</name>
 	<image>images/work/hmd.png</image>
+	<screenshotFolder></screenshotFolder>
 	
 	<description lang="fr">
 	<![CDATA[

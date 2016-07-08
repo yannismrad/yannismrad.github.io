@@ -1,5 +1,7 @@
 /**Global vars **/
-var language, langFr = "fr", defaultLanguage = "en", projectId, projectName, projectImage, projectDescription, projectGitLink, projectYTLink;
+var language, langFr = "fr", defaultLanguage = "en";
+var projectId, projectName, projectImage, projectScreenFolder, projectDescription, projectGitLink, projectYTLink;
+var nbScreenshots = 3;
 var xmlProjectFile = "project_desc.xml";
 var githubIcon = "images/logos/github.png";
 var returnToResumeText;
@@ -91,6 +93,9 @@ function processData(data)
 	//Get the project image
 	projectImage = project.find('image').text();
 	
+	//Get the screenshots folder
+	projectScreenFolder = project.find('screenshotFolder').text();
+	
 	var linksNode = project.find('links');
 	
 	//Get the github link
@@ -105,6 +110,22 @@ function processData(data)
 		
 	var textTag = '<p id="gameDescription">'+projectDescription+'</p>'
 	
+	var screenText = "";
+	var screenshotsTab = null;
+	//Screenshots (only if non empty)
+	if(projectScreenFolder.length > 0)
+	{
+		screenText ="<h1><b>Screenshots</b></h1>";
+		screenshotsTab = new Array(nbScreenshots);
+
+		for(var i=0; i< nbScreenshots;i++)
+		{
+			screenshotsTab[i] = projectScreenFolder+""+i+".png";
+		}
+	}
+	
+	
+	
 	//github icon
 	if(projectGitLink.length > 0)
 	{
@@ -112,9 +133,7 @@ function processData(data)
 		var gitText = '<h1><b>GitHub repository</b></h1>';
 	}
 	var divider = '';
-	
 
-	
 	//youtube video
 	var ytImgTag="", ytText="";
 	
@@ -132,6 +151,17 @@ function processData(data)
 	
 	if(error == false)
 	{
+		if(screenshotsTab != null && screenshotsTab.length > 0)
+		{
+			$("#linksDiv").append(screenText);
+			
+			for(var i=0; i< screenshotsTab.length;i++)
+			{
+				var imgTag = '<img height = "180" hspace="1" alt ="screenshot" src='+screenshotsTab[i]+'/>'
+				$("#linksDiv").append(imgTag);
+			}
+		}
+		$("#linksDiv").append(divider);
 		$("#linksDiv").append(ytText);
 		$("#linksDiv").append(ytImgTag);
 		$("#linksDiv").append(divider);

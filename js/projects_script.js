@@ -121,6 +121,7 @@ function processData(data)
 		for(var i=0; i< nbScreenshots;i++)
 		{
 			screenshotsTab[i] = projectScreenFolder+""+i+".png";
+			console.log("image = "+screenshotsTab[i])
 		}
 	}
 	

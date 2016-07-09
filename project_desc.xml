@@ -235,7 +235,11 @@
 <project id="mte">
 	<name>MidTerm Exam</name>
 	<image>images/work/mte.png</image>
-	<screenshotFolder></screenshotFolder>
+	<screenshots>
+		<screenshotImg>images/screenshots/mte/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/mte/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/mte/2.png</screenshotImg>
+	</screenshots>
 	<description lang="fr">
 	<![CDATA[
 	Jeu réalisé durant la WonderJam hiver 2015 à l'UQAC.

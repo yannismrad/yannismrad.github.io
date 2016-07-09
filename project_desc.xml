@@ -5,7 +5,11 @@
 <project id="grtgaz">
 	<name>Gazeduc (GRTgaz)</name>
 	<image>images/work/grtgaz.png</image>
-	<screenshotFolder>images/screenshots/grtgaz/</screenshotFolder>
+	<screenshots>
+		<screenshotImg>images/screenshots/grtgaz/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/grtgaz/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/grtgaz/2.png</screenshotImg>
+	</screenshots>
 	<description lang="fr">
 	<![CDATA[
 	Gazeduc est une application en réalité virtuelle développée par MiddleVR pour GRTgaz sur laquelle j'ai travaillé durant mon stage de Master 2. <br />
@@ -49,7 +53,11 @@
 <project id="vrs2">
 	<name>Shadow 2 (VR)</name>
 	<image>images/work/vrs2.png</image>
-	<screenshotFolder>images/screenshots/vrs2/</screenshotFolder>
+	<screenshots>
+		<screenshotImg>images/screenshots/vrs2/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/vrs2/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/vrs2/2.png</screenshotImg>
+	</screenshots>
 	<description lang="fr">
 	<![CDATA[
 	Shadow 2 est une application que j'ai développée durant mon stage chez MiddleVR et qui vise à présenter différentes fonctionnalités du plugin 
@@ -91,7 +99,12 @@
 <project id="fod">
 	<name>Fly or Die</name>
 	<image>images/work/fod.png</image>
-	<screenshotFolder>images/screenshots/fod/</screenshotFolder>
+	<screenshots>
+		<screenshotImg>images/screenshots/fod/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/fod/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/fod/2.png</screenshotImg>
+	</screenshots>
+	
 	<description lang="fr">
 	<![CDATA[
 	Jeu de duel "homme VS mouche" en réalité virtuelle développé sous Unity à l'occasion de la GlobalGameJam 2016.
@@ -132,7 +145,11 @@
 <project id="cr">
 	<name>Cubic Run</name>
 	<image>images/work/cr.png</image>
-	<screenshotFolder>images/screenshots/cr/</screenshotFolder>
+	<screenshots>
+		<screenshotImg>images/screenshots/cr/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/cr/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/cr/2.png</screenshotImg>
+	</screenshots>
 	<description lang="fr">
 	<![CDATA[
 	Runner game développé sous Unity pour le cours de Développement d'extensions logicielles, en Master 2 ISICG
@@ -301,7 +318,11 @@
 <project id="ssl">
 	<name>Super Shoot Land</name>
 	<image>images/work/ssl.png</image>
-	<screenshotFolder>images/screenshots/ssl/</screenshotFolder>
+	<screenshots>
+		<screenshotImg>images/screenshots/ssl/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/ssl/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/ssl/2.png</screenshotImg>
+	</screenshots>
 	
 	<description lang="fr">
 	<![CDATA[

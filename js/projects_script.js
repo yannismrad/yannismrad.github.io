@@ -1,6 +1,6 @@
 /**Global vars **/
 var language, langFr = "fr", defaultLanguage = "en";
-var projectId, projectName, projectImage, projectScreenFolder, projectDescription, projectGitLink, projectYTLink;
+var projectId, projectName, projectImage, projectScreenshotsNode, projectDescription, projectGitLink, projectYTLink;
 var nbScreenshots = 3;
 var xmlProjectFile = "project_desc.xml";
 var githubIcon = "images/logos/github.png";
@@ -93,9 +93,10 @@ function processData(data)
 	//Get the project image
 	projectImage = project.find('image').text();
 	
-	//Get the screenshots folder
-	projectScreenFolder = project.find('screenshotFolder').text();
+	//Get the screenshots node
+	projectScreenshotsNode = project.find('screenshots');
 	
+	//Links node
 	var linksNode = project.find('links');
 	
 	//Get the github link
@@ -112,17 +113,23 @@ function processData(data)
 	
 	var screenText = "";
 	var screenshotsTab = null;
+	
 	//Screenshots (only if non empty)
-	if(projectScreenFolder.length > 0)
+	if(projectScreenshotsNode != null)
 	{
 		screenText ="<h1><b>Screenshots</b></h1>";
-		screenshotsTab = new Array(nbScreenshots);
+		screenshotsTab = new Array();
 
-		for(var i=0; i< nbScreenshots;i++)
+		projectScreenshotsNode.find('screenshotImg').each(function() {
+			console.log("node = "+ $(this).text());
+			screenshotsTab.push($(this).text());
+		});
+		
+		/*for(var i=0; i< nbScreenshots;i++)
 		{
-			screenshotsTab[i] = projectScreenFolder+""+i+".png";
+			screenshotsTab[i] = projectScreenshotsNode+""+i+".png";
 			console.log("image = "+screenshotsTab[i])
-		}
+		} */
 	}
 	
 	
@@ -152,7 +159,7 @@ function processData(data)
 	
 	if(error == false)
 	{
-		/*if(screenshotsTab != null && screenshotsTab.length > 0)
+		if(screenshotsTab != null && screenshotsTab.length > 0)
 		{
 			$("#linksDiv").append(screenText);
 			
@@ -162,7 +169,7 @@ function processData(data)
 				$("#linksDiv").append(imgTag);
 			}
 		}
-		$("#linksDiv").append(divider); */
+		$("#linksDiv").append(divider);
 		$("#linksDiv").append(ytText);
 		$("#linksDiv").append(ytImgTag);
 		$("#linksDiv").append(divider);

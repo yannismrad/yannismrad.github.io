@@ -165,7 +165,7 @@ function processData(data)
 			
 			for(var i=0; i< screenshotsTab.length;i++)
 			{
-				var imgTag = '<img height = "180" hspace="1" alt ="screenshot" src='+screenshotsTab[i]+'/>'
+				var imgTag = '<img height = "180" hspace="1" alt ="screenshot" src="'+screenshotsTab[i]+'">'
 				$("#linksDiv").append(imgTag);
 			}
 		}

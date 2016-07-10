@@ -168,8 +168,10 @@ function processData(data)
 				var imgTag = '<img height = "180" hspace="1" alt ="screenshot" src="'+screenshotsTab[i]+'">'
 				$("#linksDiv").append(imgTag);
 			}
-		}
+		
 		$("#linksDiv").append(divider);
+		}
+		
 		$("#linksDiv").append(ytText);
 		$("#linksDiv").append(ytImgTag);
 		$("#linksDiv").append(divider);

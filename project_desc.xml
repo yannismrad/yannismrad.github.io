@@ -128,7 +128,7 @@
 	Fly player's goal is to escape through the window while the human has to kill him !
 	<br />
 
-	I have worked on gameplay elements related to the human player :
+	My contributions : 
 	<ul>
 		<li>Swatter interactions</li>
 		<li>Jam pots to break, to trap the fly when the jam is spilled</li>
@@ -157,7 +157,7 @@
 	en évitant des obstacles et en fuyant son poursuivant.
 	<br /><br />
 
-	Voici les principales fonctionnalités que j'ai mises en place : 
+	Features principales :
 	<ul>
 		<li>Génération aléatoire de plateformes choisies dans un pool de prefabs</li>
 		<li>Contrôles du personnage</li>
@@ -200,7 +200,7 @@
 	L'objectif est d'enseigner des notions de mathématiques de niveau secondaire aux utilisateurs à travers la résolution d'énigmes.
 	<br /><br />
 
-	J'ai travaillé principalement sur les mécaniques de gameplay, en particulier :
+	J'ai travaillé principalement sur des mécaniques de gameplay, en particulier :
 	<ul>
 		<li>Saisie / Lâcher des objets interactifs</li>
 		<li>Rotations d'objets pour certaines énigmes</li>
@@ -245,7 +245,7 @@
 	Jeu réalisé durant la WonderJam hiver 2015 à l'UQAC.
 	<br />Il s'agit d'un jeu de tir rythmique en 2,5D répondant au thème "Plus de peur que de mal".
 	<br /> Notre équipe était constituée de 5 programmeurs et une artiste.
-	<br/>J'ai travaillé sur les points suivants :
+	<br/>Mes conributions :
 
 	<ul>
 		<li>Placement aléatoire des élèves dans la salle de classe (nombre & disposition)</li>
@@ -261,13 +261,13 @@
 	This game has been realised during the 2015 Winter WonderJam at the UQAC.
 	<br />It's a rythmical shooter game that matches the following theme : "More fear than harm".
 	<br />Our team was composed of five developers and one artist.
-	<br/>I have worked on the following elements :
+	<br/>My contributions were :
 	
 	<ul>
-		<li>Random spawning of the students into the classroom (number, setting of the class)</li>
+		<li>Students' spawning system (position, general setting of the classroom)</li>
 		<li>Feedback management (especially sounds)</li>
 		<li>Dynamic gameplay elements (dynamic music, evolving with a "stress level")</li>
-		<li>User interface and menus</li>		
+		<li>User interface</li>		
 	</ul>
 	]]>
 	</description>
@@ -302,10 +302,10 @@
 	<![CDATA[
 		Game developed for the Video Games Development course at the UQAC.
 		<br />This is an asymetric survival game, realised with Unity. Our team was composed of three developers.
-		<br/>These were my tasks :
+		<br/>I have worked on the following :
 
 		<ul>
-			<li>General gameplay development (player controls, AI behaviour, enemy AI)</li>
+			<li>Gameplay (player controls, AI behaviour, enemy AI)</li>
 			<li>Feedbacks (musics, sounds)</li>
 			<li>User interface (HUD, menus)</li>		
 		</ul>
@@ -352,7 +352,7 @@
 		<ul>
 			<li>Key binding through a parsed XML configuration file</li>
 			<li>Two players key bindings</li>
-			<li>Wrapper class to check each player's actions more easily</li>		
+			<li>Wrapper classes to ease the players' actions checking</li>		
 		</ul>
 	]]>
 	</description>
@@ -387,14 +387,13 @@
 	
 	<description lang="en">
 	<![CDATA[
-		This is a project I have realised during my bachelor's degree in computer science at the University of Limoges.
-		The purpose of this project was to develop a 3D mobile application, which could be a game or anything else.						
-		<br/>Here, it's a Tower Defense game prototype that I have developed alone for Android platforms, using OpenGL ES and the JPCT-AE library.
-		<br/>These are the different main gameplay elements that have been developed :
+		This is a small 3D tower defense game I have realised during my bachelor's degree in computer science at the University of Limoges.					
+		<br/> I developed it for Android platforms, using OpenGL ES and the JPCT-AE library.
+		<br/>Its main features are :
 		
 		<ul>
-			<li>Building different towers (by selecting a spot)</li>
-			<li>Enemy spawning mechanism</li>
+			<li>Building different types of towers on given spots</li>
+			<li>Enemy spawning system</li>
 			<li>Basic enemy pathfinding (chained-list system).
 			<li>Enemy detection and shooting phase mechanisms (towers)</li>
 		</ul>

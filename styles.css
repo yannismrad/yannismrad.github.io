@@ -57,15 +57,21 @@ a img{border:0px;}
 	margin: 0 0 0 -475px;
 }
 #header #logo{
-	padding-top:40px;
+	padding-top:45px;
 	float:left;
 }
+
+#header #logo img
+{
+	height: 25px;
+}
+
 #header #main-menu{float:left; padding-top:45px;}
 #header #main-menu li{
 	float:left;
 	list-style:none;
-	margin-left: 16px;
-	font: 400 16px/20px 'Open Sans', Georgia, serif;
+	margin-left: 15px;
+	font: 400 16px/20px 'Open Sans Bold', Georgia, serif;
 }
 
 /****************************************************/
@@ -171,6 +177,33 @@ a img{border:0px;}
 }
 
 #work #work-thumbs li.last{margin:0px;}
+
+/****************************************************/
+/* HOBBIES SECTION */
+/****************************************************/
+
+#hobbies{margin:0px 43px; padding-top:115px;}
+#hobbies .content{overflow:auto;}
+#hobbies #hobbies-thumbs li{
+	list-style:none;
+	float:left;
+	margin:0px 20px 15px 0px;
+	padding:0px;
+}
+
+#hobbies .col {
+	width:235px;
+	float:left;
+	list-style-position: inside;
+}
+#hobbies .col-mid{margin:0px 40px;}
+
+#hobbies #hobbies-thumbs img
+{
+	height:175px;
+}
+
+#hobbies #hobbies-thumbs li.last{margin:0px;}
 
 /****************************************************/
 /* CONNECT SECTION */

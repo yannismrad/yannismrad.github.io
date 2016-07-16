@@ -57,21 +57,21 @@ a img{border:0px;}
 	margin: 0 0 0 -475px;
 }
 #header #logo{
-	padding-top:45px;
+	padding-top: 15px;
 	float:left;
 }
 
 #header #logo img
 {
-	height: 25px;
+	height: 70px;
 }
 
 #header #main-menu{float:left; padding-top:45px;}
 #header #main-menu li{
 	float:left;
 	list-style:none;
-	margin-left: 15px;
-	font: 400 16px/20px 'Open Sans Bold', Georgia, serif;
+	margin-left: 20px;
+	font: 400 15px/18px 'Open Sans Bold', Georgia, serif;
 }
 
 /****************************************************/

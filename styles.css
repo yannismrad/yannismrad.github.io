@@ -8,6 +8,7 @@ h1{font: 400 58px/60px 'TF2 Build', 'Bree Serif', Georgia, serif; color: #151515
 h2{font: 400 18px/22px 'Open Sans Bold', Georgia, serif; color: #151515;}
 h3{font: 400 14px/16px 'Open Sans Bold', Georgia, serif; font-weight : bold; color: #151515;}
 ul{margin:0px; padding:0px;}
+li.nobullet { list-style-type: none;}
 a {text-decoration:none; color: lightGray;}
 a:hover {color:white;}
 a img{border:0px;}

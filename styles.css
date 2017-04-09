@@ -104,7 +104,7 @@ a img{border:0px;}
 	height:26px; 
 	background:url(images/sm-linkedin-icon.png) no-repeat;
 }
-#about .content{overflow:auto;}
+#about .content{overflow:auto; text-align: justify;}
 #about .content img{float:left; margin-right:40px; border:2px solid #222222;}
 #about .content #service-icons{margin-top:20px;}
 #about .content #service-icons li{
@@ -125,7 +125,7 @@ a img{border:0px;}
 /* EXPERIENCE SECTION */
 /****************************************************/
 
-#experience{margin:0px 43px; padding-top:115px;}
+#experience{margin:0px 43px; padding-top:115px; text-align: justify;}
 #experience .col{
 	width:235px;
 	float:left;
@@ -144,7 +144,7 @@ a img{border:0px;}
 	float:left;
 	list-style-position: inside;
 }
-/*#experience .content{overflow:auto;} */
+#experience .content{overflow:auto;}
 #job .col-mid{margin:0px 65px;}
 
 /****************************************************/
@@ -157,7 +157,7 @@ a img{border:0px;}
 }
 
 #work{margin:0px 43px; padding-top:115px;}
-#work .content{overflow:auto;}
+#work .content{overflow:auto; text-align: justify;}
 #work #work-thumbs li{
 	list-style:none;
 	float:left;
@@ -183,7 +183,7 @@ a img{border:0px;}
 /* HOBBIES SECTION */
 /****************************************************/
 
-#hobbies{margin:0px 43px; padding-top:115px;}
+#hobbies{margin:0px 43px; padding-top:115px; text-align: justify;}
 #hobbies .content{overflow:auto;}
 #hobbies #hobbies-thumbs li{
 	list-style:none;

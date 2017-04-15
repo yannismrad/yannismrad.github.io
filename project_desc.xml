@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <projects>
 
+<!--Shade -->
+<project id="shade">
+	<name>Shade</name>
+	<image>images/work/shade.png</image>
+	<screenshots>
+		<screenshotImg>images/screenshots/shade/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/shade/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/shade/2.png</screenshotImg>
+	</screenshots>
+	<description lang="fr">
+	<![CDATA[
+	Shade est un puzzle-game coopératif développé durant le Pixel Challenge 2017, en compagnie des membres de l'équipe Silly Hat. <br />
+	Deux joueurs doivent traverser différents niveaux en colorant des tuiles afin de créer un chemin empruntable par l'un ou l'autre des joueurs selon leur couleur. <br />
+	Le joueur blanc peut ainsi peindre des tuiles en noir pour faire avancer le joueur noir, et vice versa. <br />
+	Il faudra parfois activer certains mécanismes pour progresser, et éviter des obstacles, ce qui requiert une certaine coordination et de la rapidité ! <br /><br />
+	<br /><br />
+	
+	Mes contributions sur ce jeu : 
+	<ul class="bulletedlist">
+		<li>Interactions specifiques (boutons à activer, zones à atteindre)</li>
+		<li>Comportement d'objets (différents types de tuiles, lasers en mouvement)</li>
+		<li>Scripts de configuration de niveaux</li>
+		<li>Illumination globale</li>
+	</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+		<![CDATA[
+	Shade is a 2-players Coop-puzzle game developed during the Pixel Challenge 2017 with the Silly Hat team.
+	Players have to reach the end of the levels by painting a path which can be crossed by their mate.
+	Thus, the white player can only paint tiles in black, and vice versa.<br />
+	Both players must trigger buttons and avoid obstacles in a synchronous way ! <br />
+	<br />
+	
+	My contributions on this game were :
+	<ul class="bulletedlist">
+		<li>Interactions with triggers (buttons, areas to reach, validation for both players)</li>
+		<li>Object's behaviour (moving lasers, tiles that can move)</li>
+		<li>Configuration scripts</li>
+		<li>Global Illumination</li>
+	</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="github">https://github.com/SillyHatStudio/Pixel2017</link>
+		<link name="youtube">mLhRqZcTa3w</link>
+	</links>
+</project>
+
 <!--Gazeduc / GRT Gaz -->
 <project id="grtgaz">
 	<name>Gazeduc (GRTgaz)</name>
@@ -20,7 +71,7 @@
 	La manipulation, de type main virtuelle, permet par exemple d'ouvrir des robinets, des vannes et de saisir des manomètres. <br />
 
 	J'ai travaillé en particulier sur les points suivants : 
-	<ul>
+	<ul class="bulletedlist">
 		<li>Feedbacks pour la navigation (zone de tracking dynamique en pointillées, indication de vitesse)</li>
 		<li>Tutoriel pour apprendre les différentes interactions possibles</li>
 	</ul>
@@ -37,7 +88,7 @@
 	<br /><br />
 
 	I have worked on the following elements :
-	<ul>
+	<ul class="bulletedlist">
 		<li>Navigation feedbacks (visual representation of the tracking area and speed cues)</li>
 		<li>Tutorial to learn how to interact within the application</li>
 	</ul>
@@ -65,7 +116,7 @@
 	L'application consiste à explorer un appartement en interagissant avec différents objets. <br />
 
 	Plusieurs interactions sont proposées : 
-	<ul>
+	<ul class="bulletedlist">
 		<li>Navigation type World in Miniature (maquette de téléportation)</li>
 		<li>Manipulations à une main (mapping direct)</li>
 		<li>Manipulations à deux mains contextuelles (jouer de la guitare, utiliser la maquette WIM...) </li>
@@ -81,7 +132,7 @@
 	In this application, you can explore a flat and interact with several items, with different types of interaction. <br />
 
 	Features :
-	<ul>
+	<ul class="bulletedlist">
 		<li>World in Miniature navigation</li>
 		<li>Single-handed manipulation (direct mapping)</li>
 		<li>Dual-handed manipulations (specific cases, like playing a guitar)</li>
@@ -113,7 +164,7 @@
 	<br /><br />
 
 	J'ai travaillé sur des mécaniques de gameplay liées au joueur humain :
-	<ul>
+	<ul class="bulletedlist">
 		<li>Interactions au niveau de la tapette</li>
 		<li>Pots de confiture à casser pour répandre de la confiture servant de piège</li>
 		<li>Images / illustrations pour le GUI</li>
@@ -129,7 +180,7 @@
 	<br />
 
 	My contributions : 
-	<ul>
+	<ul class="bulletedlist">
 		<li>Swatter interactions</li>
 		<li>Jam pots to break, to trap the fly when the jam is spilled</li>
 		<li>Images / GUI elements</li>
@@ -159,7 +210,7 @@
 	<br /><br />
 
 	Features principales :
-	<ul>
+	<ul class="bulletedlist">
 		<li>Génération aléatoire de plateformes choisies dans un pool de prefabs</li>
 		<li>Contrôles du personnage</li>
 		<li>Scoring, compteur de temps</li>
@@ -176,7 +227,7 @@
 	<br />
 
 	The main features I have worked on are :
-	<ul>
+	<ul class="bulletedlist">
 		<li>Random spawning of platforms, chosen in a prefab pool</li>
 		<li>Character controls</li>
 		<li>Scoring & timing</li>
@@ -202,7 +253,7 @@
 	<br /><br />
 
 	J'ai travaillé principalement sur des mécaniques de gameplay, en particulier :
-	<ul>
+	<ul class="bulletedlist">
 		<li>Saisie / Lâcher des objets interactifs</li>
 		<li>Rotations d'objets pour certaines énigmes</li>
 		<li>Logique de validation des énigmes</li>
@@ -218,7 +269,7 @@
 	<br />
 
 	I have worked on the gameplay elements, especially :
-	<ul>
+	<ul class="bulletedlist">
 		<li>Grab / drop interactive elements</li>
 		<li>Object rotation (for specific puzzles)</li>
 		<li>Puzzles' validation system</li>
@@ -248,7 +299,7 @@
 	<br /> Notre équipe était constituée de 5 programmeurs et une artiste.
 	<br/>Mes conributions :
 
-	<ul>
+	<ul class="bulletedlist">
 		<li>Placement aléatoire des élèves dans la salle de classe (nombre & disposition)</li>
 		<li>Gestion des feedbacks (sonores principalement)</li>
 		<li>Elements de gameplay dynamiques (musique dynamique)</li>
@@ -264,7 +315,7 @@
 	<br />Our team was composed of five developers and one artist.
 	<br/>My contributions were :
 	
-	<ul>
+	<ul class="bulletedlist">
 		<li>Students' spawning system (position, general setting of the classroom)</li>
 		<li>Feedback management (especially sounds)</li>
 		<li>Dynamic gameplay elements (dynamic music, evolving with a "stress level")</li>
@@ -291,7 +342,7 @@
 		<br />C'est un jeu de type survival que nous avons réalisé en équipe de trois, sous le moteur Unity.
 		<br/> Mes tâches étaient les suivantes :
 	
-		<ul>
+		<ul class="bulletedlist">
 			<li>Réalisation des mécanismes de jeu générales (joueur, IA) </li>
 			<li>Intégration de feedbacks (musiques, sons notamment)</li>
 			<li>Création de l'interface graphique (menus et HUD) </li>		
@@ -305,7 +356,7 @@
 		<br />This is an asymetric survival game, realised with Unity. Our team was composed of three developers.
 		<br/>I have worked on the following :
 
-		<ul>
+		<ul class="bulletedlist">
 			<li>Gameplay (player controls, AI behaviour, enemy AI)</li>
 			<li>Feedbacks (musics, sounds)</li>
 			<li>User interface (HUD, menus)</li>		
@@ -336,7 +387,7 @@
 
 		<br/> J'ai travaillé principalement sur la gestion des inputs :
 	
-		<ul>
+		<ul class="bulletedlist">
 			<li>Binding de touches via un parsing de fichier XML de configuration</li>
 			<li>Gestion des touches pour deux joueurs</li>	
 			<li>Wrapper pour simplifier l'accès aux inputs JSFML pour vérifier les actions des joueurs</li>
@@ -350,7 +401,7 @@
 		<br />It's a platformer/shooter Java game inspired from Super Smash Land, it uses the JSFML library.
 		<br/>I have mainly worked on the input management :
 
-		<ul>
+		<ul class="bulletedlist">
 			<li>Key binding through a parsed XML configuration file</li>
 			<li>Two players key bindings</li>
 			<li>Wrapper classes to ease the players' actions checking</li>		
@@ -377,7 +428,7 @@
 		Il s'agit ici d'un prototype de Tower Defense que j'ai développé seul sur Android à l'aide d'OpenGL ES et de la librairie JPCT-AE.
 		<br />Voici les principaux mécanismes qui y sont implémentés :
 		
-		<ul>
+		<ul class="bulletedlist">
 			<li>Sélection de "blocs" au toucher pour y construire un type de tour à choisir parmi plusieurs</li>
 			<li>Génération des ennemis</li>
 			<li>Pathfinding des ennemis</li>
@@ -392,7 +443,7 @@
 		<br/> I developed it for Android platforms, using OpenGL ES and the JPCT-AE library.
 		<br/>Its main features are :
 		
-		<ul>
+		<ul class="bulletedlist">
 			<li>Building different types of towers on given spots</li>
 			<li>Enemy spawning system</li>
 			<li>Basic enemy pathfinding (chained-list system).

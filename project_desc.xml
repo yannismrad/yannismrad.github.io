@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <projects>
 
+<!--Gonzuela -->
+<project id="gonz">
+	<name>Gonzuela</name>
+	<image>images/work/gonz.png</image>
+	<screenshots>
+		<screenshotImg>images/screenshots/gonz/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/gonz/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/gonz/2.png</screenshotImg>
+	</screenshots>
+	<description lang="fr">
+	<![CDATA[
+	Gonzuela est le jeu que notre équipe, Psycho Mantisse, a développé pour le Pixel Challenge 2018. Le thème de cette gamejam était "La tempête parfaite".<br />
+	Un joueur incarne Gonzuela, une mamie devant entretenir / nettoyer la maison, tandis qu'un autre joueur incarne trois enfants devant y semer la pagaille !<br />
+	Ils doivent en effet casser un maximum de choses pour faire monter une jauge de "Chaos" (représentant l'état de la maison) que Gonzuela doit faire descendre en nettoyant / réparant les objets cassés.<br />
+	A la fin du chrono, Gonzuela gagne si la maison est suffisament propre, sinon les enfants gagnent ! <br /><br />
+	
+	Je me suis occupé des tâches suivantes : 
+	<ul class="bulletedlist">
+		<li>Gameplay des enfants, interactions avec les objets du décor</li>
+		<li>Possibilité de switcher entre les trois enfants</li>
+		<li>IA pour les enfants non-contrôlés</li>
+	</ul>
+	]]>
+	</description>
+	
+	<description lang="en">
+		<![CDATA[
+	Gonzuela is a 2-players versus game made by team Psycho Mantisse for the Pixel Challenge 2018. <br />
+	The theme was "The perfect storm". <br />
+	One player is Gonzuela, a housemaid whose role is to keep the house clean and to repair any thing that the kids, controlled by the other player, break. <br />
+	The storm is represented by the accumulation of bad events happening at the same time in the house, which forces Gonzuela to clean or repair stuff that the kids have broken. <br />
+	The "chaos bar" on the top shows how chaotic the house is. <br />
+	At the end of the timer, Gonzuela wins if she could keep the house relatively clean (she holds most of the chaos bar). The kids win otherwise.<br /><br />
+	
+	I was in charge of :
+	<ul class="bulletedlist">
+		<li>Kids' gameplay</li>
+		<li>Switching between the three kids</li>
+		<li>AI behaviour for the non-controlled kids</li>
+	</ul>
+	]]>
+	</description>
+	
+	<links>
+		<link name="github">https://github.com/Pixel2018Team/Pixel2018Game</link>
+		<link name="youtube">GgNAsi602no</link>
+	</links>
+</project>
+
 <!--Shade -->
 <project id="shade">
 	<name>Shade</name>

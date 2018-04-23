@@ -145,7 +145,8 @@ a img{border:0px;}
 	float:left;
 	list-style-position: inside;
 }
-#experience .content{overflow:auto;}
+#experience .content{overflow:auto; text-align: justify; text-justify: inter-word;}
+#job .content{overflow:auto; text-align: justify; text-justify: inter-word;}
 #job .col-mid{margin:0px 65px;}
 
 /****************************************************/
@@ -158,7 +159,7 @@ a img{border:0px;}
 }
 
 #work{margin:0px 43px; padding-top:115px;}
-#work .content{overflow:auto; text-align: justify;}
+#work .content{overflow:auto; text-align: justify; text-justify: inter-word;}
 #work #work-thumbs li{
 	list-style:none;
 	float:left;

@@ -106,7 +106,9 @@ a img{border:0px;}
 	background:url(images/sm-linkedin-icon.png) no-repeat;
 }
 #about .content{overflow:auto; text-align: justify;}
-#about .content img{float:left; margin-right:40px; border-radius: 50%;}
+#about .content img{float:left; margin-right:40px;}
+#about .content #profile-photo{border-radius: 50%;}
+
 #about .content #service-icons{margin-top:20px;}
 #about .content #service-icons li{
 	display:block;

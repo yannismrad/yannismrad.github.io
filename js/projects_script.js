@@ -143,12 +143,13 @@ function processData(data)
 	var divider = '';
 
 	//youtube video
-	var ytImgTag="", ytText="";
+	var ytIframeTag="", ytText="";
 	
 	if(projectYTLink.length > 0)
 	{
 		ytText = "<h1><b>Video</b></h1>";
-		ytImgTag = '<a href="https://www.youtube.com/watch?v='+projectYTLink+'" target="_blank"><img height="230px" src="http://img.youtube.com/vi/'+projectYTLink+'/0.jpg" alt="Video"/> </a>';
+		ytIframeTag = '<iframe width="400" height="300" src="https://www.youtube.com/embed/'+projectYTLink+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+			
 		divider = '<div class="bottom-divider"></div>';
 	}
 		
@@ -173,7 +174,7 @@ function processData(data)
 		}
 		
 		$("#linksDiv").append(ytText);
-		$("#linksDiv").append(ytImgTag);
+		$("#linksDiv").append(ytIframeTag);
 		$("#linksDiv").append(divider);
 		$("#linksDiv").append(gitText);
 		$("#linksDiv").append(gitLink); //project github link

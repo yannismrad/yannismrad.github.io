@@ -76,6 +76,9 @@ a img{border:0px;}
 	font: 400 15px/18px 'Open Sans Bold', Georgia, serif;
 }
 
+#header #header-title {text-align:center; color: #ffffff;}
+#header #header-title h1{color: #ffffff;}
+
 /****************************************************/
 /* ABOUT SECTION */
 /****************************************************/
@@ -123,6 +126,8 @@ a img{border:0px;}
 #about .content #service-icons li.services-mobile{background:url(images/icon-2.png) no-repeat;}
 #about .content #service-icons li.services-film{background:url(images/icon-3.png) no-repeat;}
 #about .content #service-icons li.services-photo{background:url(images/icon-4.png) no-repeat;}
+
+#about #videoDiv {text-align:center;}
 
 /****************************************************/
 /* EXPERIENCE SECTION */

@@ -40,7 +40,7 @@
 	<ul class="bulletedlist">
 		<li>Kids' gameplay</li>
 		<li>Switching between the three kids</li>
-		<li>AI behaviour for the non-controlled kids</li>
+		<li>AI behaviour for the AI-controlled kids</li>
 	</ul>
 	]]>
 	</description>
@@ -65,8 +65,8 @@
 	Shade est un puzzle-game coopératif développé durant le Pixel Challenge 2017, en compagnie des membres de l'équipe Silly Hat. <br />
 	Deux joueurs doivent traverser différents niveaux en colorant des tuiles afin de créer un chemin empruntable par l'un ou l'autre des joueurs selon leur couleur. <br />
 	Le joueur blanc peut ainsi peindre des tuiles en noir pour faire avancer le joueur noir, et vice versa. <br />
-	Il faudra parfois activer certains mécanismes pour progresser, et éviter des obstacles, ce qui requiert une certaine coordination et de la rapidité ! <br /><br />
-	<br /><br />
+	Il faudra parfois activer certains mécanismes pour progresser, et éviter des obstacles, ce qui requiert une certaine coordination et de la rapidité ! <br />
+	<br />
 	
 	Mes contributions sur ce jeu : 
 	<ul class="bulletedlist">

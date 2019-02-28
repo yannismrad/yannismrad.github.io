@@ -1,6 +1,6 @@
 /**Global vars **/
 var language, langFr = "fr", defaultLanguage = "en";
-var projectId, projectName, projectImage, projectScreenshotsNode, projectDescription, projectGitLink, projectYTLink;
+var projectId, projectName, projectImage, projectScreenshotsNode, projectGameDescription, projectWorkDescription, projectGitLink, projectYTLink;
 var nbScreenshots = 3;
 var xmlProjectFile = "project_desc.xml";
 var githubIcon = "images/logos/github.png";
@@ -27,7 +27,6 @@ function checkParameters()
 	language = getURLParameter("lang");
 	projectId = getURLParameter("proj");
 	
-	setReturnLink();	
 	loadContent();
 
 }
@@ -72,7 +71,7 @@ function processData(data)
 	//invalid project
 	if(project.length == 0)
 	{
-		console.log("error invalid id");
+		//console.log("error invalid id");
 		project = xml.find('project[id="error"]'); //choose the default project (error)
 		error = true;
 	}
@@ -81,13 +80,20 @@ function processData(data)
 	projectName = project.find('name').text();
 	
 	//Get the appropriate description, for chosen language
-	projectDescription = project.find('description[lang="'+language+'"]').text();
+	projectGameDescription = project.find('description[lang="'+language+'"]').text();
+	projectWorkDescription = project.find('workDescription[lang="'+language+'"]').text();
 	
 	//if language does not exist chose english as the default one
-	if(projectDescription.length == 0)
+	if(projectGameDescription.length == 0)
 	{
 		language = defaultLanguage;
-		projectDescription = project.find('description[lang="'+defaultLanguage+'"]').text();
+		projectGameDescription = project.find('description[lang="'+defaultLanguage+'"]').text();
+	}
+	
+	if(projectWorkDescription.length == 0)
+	{
+		language = defaultLanguage;
+		projectWorkDescription = project.find('workDescription[lang="'+defaultLanguage+'"]').text();
 	}
 	
 	//Get the project image
@@ -109,7 +115,8 @@ function processData(data)
 	if(projectImage.length > 0)
 		var imgTag = '<img src="'+projectImage+'" id="gameImage" height="230px"></img>'
 		
-	var textTag = '<p id="gameDescription">'+projectDescription+'</p>'
+	var textGameDescriptionTag = '<p id="gameDescription">'+projectGameDescription+'</p>'
+	var textWorkDescriptionTag = '<p id="workDescription">'+projectGameDescription+'</p>'
 	
 	var screenText = "";
 	var screenshotsTab = null;
@@ -121,7 +128,7 @@ function processData(data)
 		screenshotsTab = new Array();
 
 		projectScreenshotsNode.find('screenshotImg').each(function() {
-			console.log("node = "+ $(this).text());
+			//console.log("node = "+ $(this).text());
 			screenshotsTab.push($(this).text());
 		});
 		
@@ -138,65 +145,44 @@ function processData(data)
 	if(projectGitLink.length > 0)
 	{
 		var gitLink ='<a href="'+projectGitLink+'" title="'+projectName+' page"><img src="'+githubIcon+'" id="githubIcon"/></a>';
-		var gitText = '<h1><b>GitHub repository</b></h1>';
+		var gitText = '<h1><b>GitHub</b></h1>';
 	}
 	var divider = '';
 
 	//youtube video
-	var ytIframeTag="", ytText="";
+	var ytIframeTag="";
 	
 	if(projectYTLink.length > 0)
 	{
-		ytText = "<h1><b>Video</b></h1>";
-		ytIframeTag = '<iframe width="400" height="300" src="https://www.youtube.com/embed/'+projectYTLink+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+		ytIframeTag = '<iframe id="videoFrame" width="600" height="400" src="https://www.youtube.com/embed/'+projectYTLink+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 			
-		divider = '<div class="bottom-divider"></div>';
+		//divider = '<div class="bottom-divider"></div>';
 	}
 		
 	//Append the content to the HTML tags
 	$("#gameName").append(projectName); //project name
-	$("#gameDiv").append(imgTag); //project image
-	$("#gameDiv").append(textTag); //project description
+	//$("#gameDiv").append(imgTag); //project image
+	$("#gameDescriptionDiv").append(textGameDescriptionTag); //project description
+	$("#videoDiv").append(ytIframeTag); // video
 	
 	if(error == false)
 	{
 		if(screenshotsTab != null && screenshotsTab.length > 0)
 		{
-			$("#linksDiv").append(screenText);
+			$("#screenshotsDiv").append("<div class=\"top-divider\"></div>");
+			$("#screenshotsDiv").append(screenText);
 			
 			for(var i=0; i< screenshotsTab.length;i++)
 			{
 				var imgTag = '<a target="_blank" href="images/screenshots/'+projectId+'/'+i+'.png"><img height = "180" hspace="1" alt ="screenshot" src="'+screenshotsTab[i]+'"></a>'
-				$("#linksDiv").append(imgTag);
+				$("#screenshotsDiv").append(imgTag);
 			}
 		
-		$("#linksDiv").append(divider);
 		}
 		
-		$("#linksDiv").append(ytText);
-		$("#linksDiv").append(ytIframeTag);
-		$("#linksDiv").append(divider);
 		$("#linksDiv").append(gitText);
 		$("#linksDiv").append(gitLink); //project github link
 	}
-}
-
-/** Set the right return page (fr or en) depending on the language **/
-function setReturnLink()
-{
-	//Return to resume link in header
-	if(language==langFr)
-		returnToResumeText= "Retour au CV";	
-	else
-		returnToResumeText = "Return to Resume"
-		
-	$("#returnToResumeLink").append("<b>"+returnToResumeText+"</b>");
-	if(language=="fr")
-		$("#returnToResumeLink").attr("href","index.htm");
-		
-	else
-		$("#returnToResumeLink").attr("href","index_eng.htm");
-	
 }
 
 /**Load the IE version **/

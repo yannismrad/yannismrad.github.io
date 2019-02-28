@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 <!--<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <script type='text/javascript' src="js/jquery-2.1.4.min.js"></script>	
 <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -18,33 +19,36 @@
 
 <body>
 <div id="header">
-	<div id="logo"><a href="#"><img src="images/logo.png" alt="menu logo"/></a></div>
-	<ul id="main-menu">
-		<li><a href="" id="returnToResumeLink"></a></li>
-	</ul>
+	<div id="logo"><a href="#" onClick="history.go(-1)"><i class="fas fa-arrow-circle-left fa-4x"></i></a></div>
+		<div id="header-title">
+			<h1 id="gameName"></h1>
+		</div>
 </div>
 
 <div id="container">
 
-<!--Begin About Section-->
-    <div id="about">
-	
-		<div class="section-title">
-			<h1 id="gameName"></h1>
-		</div>
-		
-        <div class="top-divider"></div>
-		
-        <div class="content" id="gameDiv"> </div>
-		
+	<!-- Description -->
+	<div id="about">
+			
+			<div class="content col" id="videoDiv"> </div>
+			
+	        <div class="content" id="gameDescriptionDiv"> </div>
+			
+			<div class="content" id="workDescriptionDiv"> </div>
 	</div>
 	
-	
+	<!-- Screenshots -->
 	<div id="experience">
+		<div class="content" id="screenshotsDiv">
+		</div>	
+	</div>
+	
+	<!-- Links -->
+	<div id="experience">
+	
 		<div class="top-divider"></div>
 		
 		<div class="content" id="linksDiv">
-			<!--<h1>Video</h1> -->
 				
 		</div>	
 		

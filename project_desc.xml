@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <projects>
 
+<!--ZS Redeemed edition -->
+<project id="zs">
+	<name>Zombie Survival : Redeemed Edition</name>
+	<image>images/work/zs.png</image>
+	<screenshots>
+		<screenshotImg>images/screenshots/zs/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/zs/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/zs/2.png</screenshotImg>
+		<screenshotImg>images/screenshots/zs/3.png</screenshotImg>
+	</screenshots>
+	<description lang="fr">
+	<![CDATA[
+	Zombie Survival est un mod multijoueur pour le jeu Garry's Mod (PC) dans lequel des humains doivent survivre face à des zombies.<br />
+	En tant qu'humain, vous pouvez obtenir de nouvelles armes en tuant des zombies, et en tant que zombie, éliminer des humains permet de débloquer de nouvelles classes. <br />
+	Avec suffisamment d'humains tués, un zombie peut ressusciter et reprendre le combat. <br /><br />
+	A l'origine le mod avait un gameplay de type gun and run / arcade, mais la version principale du jeu s'est depuis orientée sur un aspect survie / barricade plus poussé.<br />
+	Redeemed Edition en est une réecriture complète, visant à retourner à un gameplay arcade avec ses particularités. De futurs ajouts viendront bonifier son contenu. <br /><br />
+	
+	Avec ce projet développé en LUA, je me suis lancé pour défi de faire revivre ce jeu qui m'avait occupé durant de nombreuses soirées il y a une décennie ! <br />
+	Le fait que ce soit un mod et non un jeu "standalone" permet de m'affranchir des contraintes artistiques et des problématiques liées au jeu en réseau : Garry's Mod fournit les outils et le contenu nécessaire pour cela. <br />
+	Je me suis occupé de l'intégralité du développement en m'aidant d'un ancien code fait par Clavus, Ywa et Deluvas - anciens développeurs de la communauté Mr Green Gaming qui hébergera le jeu - et du code plus récent fait par Jetboom, le créateur original du mod. <br />
+	L'ancien code étant déprécié et non fonctionnel, et le nouveau étant trop différent de ce que je voulais faire, j'ai choisi de partir de zéro en m'inspirant du premier et en prenant les outils nécessaires issus du second pour le faire fonctionner. <br /><br />
+
+	Le projet, débuté en 2020, est toujours en cours de développement, et voici les principaux travaux accomplis à ce jour : <br />
+	<ul class="bulletedlist">
+		<li>Gameplay des humains et des zombies</li>
+		<li>Mécaniques principales (déblocage des armes, déblocage des classes, système de "redeem")</li>
+		<li>Interface utilisateur et menus de choix de classe et d'options</li>
+		<li>Backend et "Services" permettant de gérer l'information des joueurs (scores, temps joué etc) et leur inventaire (en cours de développement)</li>
+		<li>Implémentation d'un magasin permettant d'acheter des améliorations et des objets cosmétiques (en cours)</li>
+	</ul>
+	<br />
+	
+	Une première démo a eu lieu en novembre 2020, et une prochaine aura probablement lieu d'ici le printemps 2021 avec une sortie en bout de ligne. <br />
+	]]>
+	</description>
+	
+	<description lang="en">
+	<![CDATA[
+	Zombie Survival is a multiplayer mod for Garry's Mod (PC) in which a group of humans have to survive against zombies. <br />
+	As a human, you can get new weapons and bonuses by killing zombies, whereas zombies can unlock new classes by klling humans. <br />
+	If you kill enough humans, you can redeem and keep fighting the undead as a human again ! <br /><br />
+	
+	The original mod had a run & gun / arcade styled gameplay, but since then it became more realistic, with an emphasis on barricading. <br />
+	Redeemed Edition is a full re-coding of the original mod, which is meant to bring the old school gameplay back. <br />
+	Future content will be added on top of the core gameplay. <br /><br />
+	
+	With this project, coded in LUA, I wanted to challenge myself and revive this game on which I had tons of fun with as a teen. <br />
+	Making it a mod and not a standalone game allows me to focus on the gameplay without the hassle of managing the artistic and networking parts, which both are provided by Garry's Mod engine and content. <br />
+	
+	I developed the mod using an old code made by Clavus, Ywa and Deluvas - developers of the Mr Green Gaming community, which will host the mod - as a base, and a more recent one by Jetboom, ZS' original creator. <br />
+	The old code being deprecated and broken with the current version of Garry's Mod, and the new one being too different from what I wanted to achieve, I started everything from scratch taking inspiration from the old code, and using the necessary tools from the second to be able to run it on Garry's Mod. <br /><br />
+
+	The project started in 2020 and still in progress, here are the main features done at the moment : <br />
+	<ul class="bulletedlist">
+		<li>Human and zombie gameplay</li>
+		<li>Core gameplay mechanics Mécaniques (weapons unlocking, zombie classes, redeeming)</li>
+		<li>UI and menus for zombie classes and options</li>
+		<li>Backend and services for managing player data (score, time played etc) and their inventory (work in progress)</li>
+		<li>Implementation of an in-game shop that allows to buy upgrades and cosmetic items (work in progress)</li>
+	</ul>
+	<br />
+	
+	A first public demo took place in November 2020, another one will probably be planned around spring 2021 with a release planned after that. <br />
+	]]>
+	</description>
+	
+	<links>
+		<link name="github">https://github.com/yannismrad/zombiesurvivalrevamped</link>
+		<link name="youtube">Gu0wtAujWf4</link>
+	</links>
+</project>
+
 <!--Gonzuela -->
 <project id="gonz">
 	<name>Gonzuela</name>

@@ -142,6 +142,8 @@ a img{border:0px;}
 /*#experience .content{overflow:auto;} */
 #experience .col-mid{margin:0px 65px;}
 
+#experience .imgScreenshot {max-width: 100%;  height: auto; margin-right: 5px;} 
+
 /****************************************************/
 /* JOB SECTION */
 /****************************************************/

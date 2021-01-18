@@ -85,18 +85,19 @@
 	</screenshots>
 	<description lang="fr">
 	<![CDATA[
-	Gonzuela est le jeu que notre équipe, Psycho Mantisse, a développé pour le Pixel Challenge 2018. <br />
+	Gonzuela est le jeu que notre équipe, Psycho Mantisse, a développé durant le Pixel Challenge 2018. <br />
 	Le thème de cette gamejam était "La tempête parfaite".<br />
 	Un joueur incarne Gonzuela, une mamie devant entretenir / nettoyer la maison, tandis qu'un autre joueur incarne trois enfants devant y semer la pagaille !<br />
 	Ils doivent en effet casser un maximum de choses pour faire monter une jauge de "Chaos" (représentant l'état de la maison) que Gonzuela doit faire descendre en nettoyant / réparant les objets cassés.<br />
 	A la fin du chrono, Gonzuela gagne si la maison est suffisament propre, sinon les enfants gagnent ! <br /><br />
 	
-	Je me suis occupé des tâches suivantes : 
-	<ul class="bulletedlist">
-		<li>Gameplay des enfants, interactions avec les objets du décor</li>
-		<li>Possibilité de switcher entre les trois enfants</li>
-		<li>IA pour les enfants non-contrôlés</li>
-	</ul>
+	Sur ce jeu je me suis occupé de plusieurs parties du gameplay, du côté des enfants principalement, à savoir leur gameplay en général et leurs interactions avec les différents objets du décor. <br />
+	À tout moment, le joueur a la possibilité d'alterner entre les trois enfants : deux des enfants sont alors contrôlés par une IA qui va, de manière aléatoire, les faire se promener dans la maison.<br />
+	À certains moments (aléatoires aussi), un enfant IA se dirigera vers un objet et provoquera une interaction avec celui-ci. 
+	Lors de l'interaction, l'enfant IA restera un certain temps à coté de l'objet pour simuler l'interaction (lorsque le joueur interagit avec quelque chose, l'action prend un certain temps). <br />
+	
+	J'ai également pris soin de gérer l'ouverture automatique des portes lorsqu'un personnage s'en approche (un peu comme dans le jeu Les Sims) <br />
+	
 	]]>
 	</description>
 	
@@ -109,12 +110,11 @@
 	The "chaos bar" on the top shows how chaotic the house is. <br />
 	At the end of the timer, Gonzuela wins if she could keep the house relatively clean (she holds most of the chaos bar). The kids win otherwise.<br /><br />
 	
-	I was in charge of :
-	<ul class="bulletedlist">
-		<li>Kids' gameplay</li>
-		<li>Switching between the three kids</li>
-		<li>AI behaviour for the AI-controlled kids</li>
-	</ul>
+	For this game, I have mainly worked on the gameplay parts related to the kids : their gameplay in general, and the way they interact with all the items placed on the stage. <br />
+	At any time, the player can switch between the three kids : two of them are controlled by an AI that will make them wander in the house in a random way. <br />
+	Also, an AI kid will head to an item's location and iteract with it for a certain amount of time (as the player, interacting with an item takes some time, so we're simulating this for the AI player) <br />
+	On a side note, I also took care of how the doors are opened-closed when a character gets close (like in The Sims game). <br />
+	
 	]]>
 	</description>
 	
@@ -141,13 +141,13 @@
 	Il faudra parfois activer certains mécanismes pour progresser, et éviter des obstacles, ce qui requiert une certaine coordination et de la rapidité ! <br />
 	<br />
 	
-	Mes contributions sur ce jeu : 
-	<ul class="bulletedlist">
-		<li>Interactions specifiques (boutons à activer, zones à atteindre)</li>
-		<li>Comportement d'objets (différents types de tuiles, lasers en mouvement)</li>
-		<li>Scripts de configuration de niveaux</li>
-		<li>Illumination globale</li>
-	</ul>
+	Sur ce projet, je me suis occupé d'un côté de l'organisation (créer le github, gérer la manière dont nous allions nous partager les ressources) et de l'autre de la partie gameplay. <br />
+	Je me suis intéressé notamment aux interactions entre les deux personnages et les objets nécessaires permettant de finir un niveau (boutons, zones à atteindre).<br />
+	La plupart du temps, l'interaction repose sur une détection de collision pour l'un ou l'autre ou les deux joueurs (ex : deux joueurs en meme temps sur deux boutons, ou un seul des deux qui appuie sur un bouton pour ouvrir la voie à l'autre).<br />
+
+	Une autre feature que j'avais rajoutée était la présence de lasers en mouvement qui devaient entraîner le game over au contact de l'un des joueurs, mais elle n'etait pas entièrement finie à la fin de la jam. <br />
+	A côté, je me suis également occupé un peu du lightmapping / illumination globale des niveaux.
+
 	]]>
 	</description>
 	
@@ -159,13 +159,13 @@
 	Both players must trigger buttons and avoid obstacles in a synchronous way ! <br />
 	<br />
 	
-	My contributions on this game were :
-	<ul class="bulletedlist">
-		<li>Interactions with triggers (buttons, areas to reach, validation for both players)</li>
-		<li>Object's behaviour (moving lasers, tiles that can move)</li>
-		<li>Configuration scripts</li>
-		<li>Global Illumination</li>
-	</ul>
+	On this game, I've taken care of the upstream organization (creating the github, managing the way we would share the game assets) and some parts of the gameplay. <br />
+	I've worked on the interactios between the two characters and the different objects needed to finish a level (buttons, collision areas). <br />
+	Most of the time, these interactions rely on a collision detection for either one or the other or both players (eg : two players pushing two buttons at the same time, or one of them pushing a button which unlocks the path for the other).<br />
+	
+	Another feature that I haven't had time to finished at the end of the jam was the presence of lasers that caused a game over whenever a player was hit. <br />
+	
+	Besides, I also worked on the lightmapping / Global illumination for the different levels.
 	]]>
 	</description>
 	
@@ -186,18 +186,19 @@
 	</screenshots>
 	<description lang="fr">
 	<![CDATA[
-	Gazeduc est une application en réalité virtuelle développée par MiddleVR pour GRTgaz sur laquelle j'ai travaillé durant mon stage de Master 2. <br />
+	Gazeduc est une application en réalité virtuelle développée par MiddleVR pour GRTgaz (filiale du groupe ENGIE) sur laquelle j'ai travaillé durant mon stage de Master 2. <br />
 	C'est une application développée sous Unity, fonctionnant sous HTC Vive,  qui a pour objectif de former des techniciens aux opérations sur des postes de détente de gaz.<br />
 	Elle comporte une simulation physique réaliste de la pression du gaz en différents points de l'installation, l'aspect VR permet de manipuler différents éléments permettant
-	d'agir sur cette simulation <br />
-	Il est possible de se déplacer à pieds dans une zone définie puis de faire déplacer cette dernière pour aller plus loin.<br />
-	La manipulation, de type main virtuelle, permet par exemple d'ouvrir des robinets, des vannes et de saisir des manomètres. <br />
-
-	J'ai travaillé en particulier sur les points suivants : 
-	<ul class="bulletedlist">
-		<li>Feedbacks pour la navigation (zone de tracking dynamique en pointillées, indication de vitesse)</li>
-		<li>Tutoriel pour apprendre les différentes interactions possibles</li>
-	</ul>
+	d'agir sur cette simulation. <br />
+	La manipulation, de type main virtuelle, permet par exemple d'ouvrir des robinets, des vannes et de saisir des manomètres. <br /><br />
+	
+	Je me suis occupé de travailler sur la navigation de l'utilisateur, qui repose sur la présence d'une zone en pointillés au sol. <br />
+	Comme le projet était concu pour être utilisé avec le HTC Vive, l'idée de cette zone était que si la personne se déplacait vers une bordure, celle-ci glisserait doucement dans la direction choisie. <br />
+	C'est comme une plateforme que nous pouvons parcourir à pieds et faire se déplacer dans quatre directions. <br />
+	Le déplacement de la zone se fait graduellement : plus on pénètre loin dans la bordure, plus la vitesse de déplacement - symbolisée par un vecteur au sol - sera rapide. <br /><br />
+	
+	Par ailleurs, j'ai mis en place un tutoriel qui permet à un utilisateur d'apprendre les différents gestes permettant de manipuler l'equipement et les appareils du poste de détente de gaz.<br />
+	À chaque étape, il nous est demandé d'effectuer un geste. Celui-ci est alors validé en vérifiant si il a été effectué entièrement (en vérifiant par exemple l'angle de rotation d'une valve, ou si un objet est placé au bon endroit). <br />
 	]]>
 	</description>
 	
@@ -205,16 +206,17 @@
 		<![CDATA[
 	Gazeduc is a VR application developed by MiddleVR for GRTgaz I have been working on during my Master2's internship. <br />
 	Developed with Unity for the HTC Vive, it is a training application that teaches engineers how to operate on specific gas distribution facilities. <br />
-	With the VR, you can interact with various elements to modify the realistic gas simulation running behind. <br />
-	You can walk inside a tracking area (provided by the Vive) and even move farther by reaching its edges. <br />
-	Direct virtual hand manipulation allows you to manipulate the different objects (taps, valves, manometers etc). 
-	<br /><br />
+	With VR, you can safely interact with various elements to modify the realistic gas simulation running behind. <br />
 
-	I have worked on the following elements :
-	<ul class="bulletedlist">
-		<li>Navigation feedbacks (visual representation of the tracking area and speed cues)</li>
-		<li>Tutorial to learn how to interact within the application</li>
-	</ul>
+	Direct virtual hand manipulation allows you to manipulate the different objects (taps, valves, manometers etc). <br /><br />
+	
+	I have worked on the user navigation, which relies on a tracking area displayed on the floor. <br />
+	You can walk inside this area, and when you reach an edge, the area will slowly start to "slide" in the chosen direction, as if you were on a moving platform.  <br />
+	The farther you are into the border of the platform, the faster it will move (speed is represented by a vector drawn on the floor). <br />
+	
+	In addition to this, I have worked on a tutorial that allows a user to learn the different gestures that he will have to use un order to handle the facility's equipment. <br />
+	Each of the tutorial's steps require you to make a specific gesture in order to have a specific result (e.g.: turning a valve handle in a particular angle, or check if an object is plugged into the gas system).<br />
+
 	]]>
 	</description>
 	
@@ -235,16 +237,17 @@
 	<description lang="fr">
 	<![CDATA[
 	Shadow 2 est une application que j'ai développée durant mon stage chez MiddleVR et qui vise à présenter différentes fonctionnalités du plugin 
-	MiddleVR pour Unity. <br />
-	L'application consiste à explorer un appartement en interagissant avec différents objets. <br />
-
-	Plusieurs interactions sont proposées : 
-	<ul class="bulletedlist">
-		<li>Navigation type World in Miniature (maquette de téléportation)</li>
-		<li>Manipulations à une main (mapping direct)</li>
-		<li>Manipulations à deux mains contextuelles (jouer de la guitare, utiliser la maquette WIM...) </li>
-		<li>Interactions diverses (ex : ouvrir une porte, dessiner avec un crayon) </li>
-	</ul>
+	MiddleVR pour Unity. L'idée est de se promener dans un appartement pour intéragir avec les objets qui s'y trouvent, en proposant différentes manières d'interagir. <br /><br />
+	
+	J'ai eu carte blanche pour proposer diverses expériences et interactions intéressantes, alors j'ai mis en place une série d'activités simples à réaliser 
+	et qui permettent de montrer une partie de ce que l'on peut faire en VR. <br />
+	Comme l'appartement comporte plusieurs pièces, j'ai implémenté une navigation de type World in Miniature : On dispose d'une maquette de l'appartement que l'on peut saisir comme une carte. <br />
+	En cliquant sur une sphère, on se téléporte alors vers la pièce choisie.<br />
+	La maquette étant une version miniature de la scène réelle, on ne risque pas de se perdre puisque l'on peut idenfitier facilement l'endroit où nous nous trouvons. <br /><br />
+	
+	Au niveau des manipulations, il est possible de manipuler des objets à une et/ou deux mains de facon naturelle (mapping direct : une manette représente une main). <br />
+	Par exemple, on peut saisir des objets et les lancer, prendre un crayon et dessiner, naviguer sur une télévision à écran "tactile" ou encore jouer de la guitare à deux mains. <br />
+	
 	]]>
 	</description>
 	
@@ -252,15 +255,13 @@
 		<![CDATA[
 	Shadow 2 is a VR application that I have developed during my internship at MiddleVR.
 	Its goal is to show different functionnalities provided with the MiddleVR For Unity plugin. <br/>
-	In this application, you can explore a flat and interact with several items, with different types of interaction. <br />
+	In this application, you can explore a flat and interact with several items, with different types of interaction. <br /><br />
 
-	Features :
-	<ul class="bulletedlist">
-		<li>World in Miniature navigation</li>
-		<li>Single-handed manipulation (direct mapping)</li>
-		<li>Dual-handed manipulations (specific cases, like playing a guitar)</li>
-		<li>Other interactions (open a door, draw with a pen...)</li>
-	</ul>
+	I have implemented various activites and interactions that were meant to be simple to execute and that show what VR allows you to do. <br />
+	As the flat is composed of multiple rooms, I've chosen to implement a World in Miniature navigation : using a miniature model of the flat, you can freely navigate between the rooms by clicking on spheres above them. <br />
+	
+	Manipulations were made so some objects could be used with one hand or both, as you would do in real life (direct mapping is used here, that means your Vive controllers are your virtual hands). <br />
+	You can for example grab objects and throw them, take a pen and draw on a board, surf the internet on a touchscreen TV or play guitar with your two hands. <br />
 	]]>
 	</description>
 	
@@ -281,33 +282,29 @@
 	
 	<description lang="fr">
 	<![CDATA[
-	Jeu de duel "homme VS mouche" en réalité virtuelle développé sous Unity à l'occasion de la GlobalGameJam 2016.
+	Fly or Die est un jeu de duel asymétrique "homme VS mouche" en réalité virtuelle développé sous Unity à l'occasion de la GlobalGameJam 2016.
 	Un joueur contrôle une mouche à la manette tandis qu'un autre utilise un casque et un wand (HTC Vive) pour la chasser.
-	Le but de la mouche est de s'enfuir par la fenêtre tandis que le joueur au Vive doit l'écraser !
+	Le but de la mouche est de s'enfuir par la fenêtre tandis que le joueur au Vive doit l'écraser avec sa tapette !
 	<br /><br />
+	
+	Je m'etais occupé d'une partie du gameplay côté humain, avec notamment les interactions au niveau de la tapette ainsi que l'ajout de pots de confiture pouvant servir de pièges : <br />
+	En cassant un pot, la confiture se répand au sol. Si la mouche se pose dessus, elle reste bloquée quelques secondes. <br />
 
-	J'ai travaillé sur des mécaniques de gameplay liées au joueur humain :
-	<ul class="bulletedlist">
-		<li>Interactions au niveau de la tapette</li>
-		<li>Pots de confiture à casser pour répandre de la confiture servant de piège</li>
-		<li>Images / illustrations pour le GUI</li>
-	</ul>
+	J'ai également travaillé sur le côté UI / images pour réaliser quelques images et menus explicatifs. <br />
 	]]>
 	</description>
 	
 	<description lang="en">
 		<![CDATA[
-	Fly or Die is a VR duel game developed during the GlobalGameJam 2016, using Unity.
-	A player controls a fly with gamepad while another uses an HMD and a wand (HTC Vive in our case) as a fly swatter.
+	Fly or Die is an asymetrical VR duel game developed during the GlobalGameJam 2016, using Unity.
+	A player controls a fly with a gamepad while the other uses an HMD and a wand (HTC Vive for example) as a fly swatter.
 	Fly player's goal is to escape through the window while the human has to kill him !
 	<br />
 
-	My contributions : 
-	<ul class="bulletedlist">
-		<li>Swatter interactions</li>
-		<li>Jam pots to break, to trap the fly when the jam is spilled</li>
-		<li>Images / GUI elements</li>
-	</ul>
+	I've worked on some parts of the gameplay related to the swatter interactions, and adding jam pots that could be used as traps : <br />
+	Breaking a jam pot would spill its content on the floor. If the fly gets too close, it would be stuck there for a short time. <br />
+	
+	I've also worked on the UI / menus by making a few tutorial pictures and menu elements. <br />
 	]]>
 	</description>
 	
@@ -327,35 +324,31 @@
 	</screenshots>
 	<description lang="fr">
 	<![CDATA[
-	Runner game développé sous Unity pour le cours de Développement d'extensions logicielles, en Master 2 ISICG.
-	Le personnage se contrôle à la souris et doit sauter de plateforme en plateforme pour récolter des orbes tout
-	en évitant des obstacles et en fuyant son poursuivant.
+	Cubic Run est un Endless Runner développé sous Unity pour le cours de Développement d'extensions logicielles, en Master 2 ISICG. <br />
+	Le but est de sauter de plateforme en plateforme pour récolter des orbes tout en évitant des obstacles et en fuyant un monstre cubique qui dévore les plateformes sur son chemin.
 	<br /><br />
+	
+	Celles-ci sont des préfabs qui sont stockés dans une pool / liste. Elles sont choisies aléatoirement lors de leur apparition, et une fois "mangées" par le monstre elles sont remises en pool. <br />
+	Le personnage se dirige a la souris, en cliquant en continu pour qu'il se dirige vers l'endroit choisi. (On projette alors les coordonnées 2D du clic dans l'espace 3D pour déterminer l'endroit où il faut aller). <br />
+	Si le personnage tombe, touche des blocs rouges ou se fait manger (colliders) c'est le game over. <br />
+	
+	Une feature que j'ai rajoutée est l'accéleration du rythme de jeu lorsque le joueur récolte suffisamment d'orbes : les plateformes défilent de plus en plus vite et sont de plus en plus compliquées, le monstre ouvre et ferme sa mâchoire plus vite 
+	et la musique change pour rendre la situation plus stressante ! <br />
 
-	Features principales :
-	<ul class="bulletedlist">
-		<li>Génération aléatoire de plateformes choisies dans un pool de prefabs</li>
-		<li>Contrôles du personnage</li>
-		<li>Scoring, compteur de temps</li>
-		<li>Eléments de gameplay dynamiques (vitesse variable, musique dynamique)</li>
-	</ul>
 	]]>
 	</description>
 	
 	<description lang="en">
-		<![CDATA[
-	This is a runner game I have made with Unity for the software plugin course during my Master 2 ISICG.
-	The character is controlled with the mouse and has to collect orbs while dodging obstacles and being chased
-	by a monster.
-	<br />
-
-	The main features I have worked on are :
-	<ul class="bulletedlist">
-		<li>Random spawning of platforms, chosen in a prefab pool</li>
-		<li>Character controls</li>
-		<li>Scoring & timing</li>
-		<li>Dynamic gameplay elements (scrolling speed increasing when scoring, dynamic music)</li>
-	</ul>
+	<![CDATA[
+	Cubic Run is an endless runner game that I have made with Unity for the software plugin course during my Master 2 ISICG. <br />
+	The goal is to run and jump over the platforms, collect orbs that increase your score and avoid obstacles and a cubic monster that is chasing you and eating the platforms on his way. <br /><br />
+	
+	Those are prefabs that are stored in a pool. They are randomly chosen, and once they are "eaten" by the monster, they go back to the pool. <br />
+	The character is controlled with the mouse. Holding the mouse click makes him go to the chosen point (we transform the mouse 2D coordinates into 3D coordinates to have said point). <br />
+	If you fall, touch red blocks or get eaten by the monster (collider checks), you lose ! <br /><br />
+	
+	Another feature that I have added to make the game more dynamic is a pace that changes according to the player score : platforms move faster and are more complicated, the monster's jaws are chewing faster and the music changes as well. <br />
+	
 	]]>
 	</description>
 	
@@ -370,33 +363,27 @@
 	<screenshotFolder></screenshotFolder>
 	<description lang="fr">
 	<![CDATA[
-	Serious game réalisé dans le cadre du cours Interaction 3D et Réalité Virtuelle de l'UQAC.
-	Un bras haptique (Novint Falcon) est utilisé dans le cadre de ce jeu afin de manipuler des éléments interactifs et de ressentir les forces de contact.
-	L'objectif est d'enseigner des notions de mathématiques de niveau secondaire aux utilisateurs à travers la résolution d'énigmes.
+	Serious game réalisé dans le cadre du cours Interaction 3D et Réalité Virtuelle de l'UQAC. <br />
+	On contrôle ici un robot qui doit résoudre une série d'énigmes afin de réparer différentes parties de son vaisseau spatial. <br />
+	Un bras haptique (Novint Falcon) est utilisé dans le cadre de ce jeu afin de contrôler le robot, de manipuler des éléments interactifs et de ressentir les forces de contact.<br />
+	Les énigmes sont composées de notions de mathématiques de niveau secondaires, et les réponses sont obtenues en manipulant certains objets, d'où l'aspect serious-game du jeu. <br />
 	<br /><br />
 
-	J'ai travaillé principalement sur des mécaniques de gameplay, en particulier :
-	<ul class="bulletedlist">
-		<li>Saisie / Lâcher des objets interactifs</li>
-		<li>Rotations d'objets pour certaines énigmes</li>
-		<li>Logique de validation des énigmes</li>
-	</ul>
+	J'ai travaillé principalement sur des mécaniques de gameplay, et notamment la manipulation des objets à l'aide du bras haptique. <br />
+	Il y avait tout d'abord le fait de saisir/lâcher des objets (pour les placer à des endroits précis), la rotation d'autres objets (ex: faire tourner une roue pour aligner une valeur donnée) et la logique de validation des énigmes en général. <br />
+	
 	]]>
 	</description>
 	
 	<description lang="en">
 		<![CDATA[
-	Serious game developed for the 3D interaction & Virtual Reality course (UQAC).
-	An haptic device (Novint Falcon) is used to manipulate interactive game elements and feel various forces.
-	<br />The goal is to teach notions of maths (secondary level) to the users by resolving four puzzles.
-	<br />
+	Serious game developed for the 3D interaction & Virtual Reality course (UQAC).  <br />
+	We play as a robot that must solve enigmas in order to repair his broken spaceship.  <br />
+	An haptic device (Novint Falcon) is used to manipulate interactive game elements and feel various forces.  <br />
+	Enigmas are actually math problems (secondary level) that have to be solved by manipulating specific objects to find the correct answers, hence the serious-game aspect. <br /><br /> 
+	
+	I have worked on the gameplay elements, especially the object manipulation with the haptic device such as grabbing/dropping objects (to place them on specific spots), rotation (e.g.: rotating a wheel to align a value written on it) and the validation logic in general.  <br />
 
-	I have worked on the gameplay elements, especially :
-	<ul class="bulletedlist">
-		<li>Grab / drop interactive elements</li>
-		<li>Object rotation (for specific puzzles)</li>
-		<li>Puzzles' validation system</li>
-	</ul>
 	]]>
 	</description>
 	
@@ -417,33 +404,39 @@
 	</screenshots>
 	<description lang="fr">
 	<![CDATA[
-	Jeu réalisé durant la WonderJam hiver 2015 à l'UQAC.
-	<br />Il s'agit d'un jeu de tir rythmique en 2,5D répondant au thème "Plus de peur que de mal".
-	<br /> Notre équipe était constituée de 5 programmeurs et une artiste.
-	<br/>Mes conributions :
+	Midterm Exam est un jeu réalisé durant la WonderJam hiver 2015 à l'UQAC. <br />
+	Il s'agit d'un jeu de tir rythmique en 2,5D répondant au thème "Plus de peur que de mal".<br />
+	On incarne un professeur un peu stressé qui surveille un examen. Les étudiants ont tendance à vouloir copier sur leurs voisins, jouer avec leur téléphone ou encore faire du bruit, ce qui fait stresser encore plus le professeur. <br />
+	Son unique solution pour se détendre : lancer des craies sur les étudiants agités ! <br />
+	Plus l'agitation générale augmente, plus le stress s'intensifie. Il faut alors se dépêcher de tirer des craies pour faire redescendre le stress. <br />
+	Tirer sur un étudiant agité fait gagner des points, mais viser un innocent en fait perdre ! <br />
+	
+	Sur ce jeu, notre équipe était constituée de 5 programmeurs et une artiste.<br /><br />
+	
+	J'ai travaillé pour ma part sur plusieurs parties du gameplay. <br />
+	Le placement des élèves dans la classe qui est configurable (on peut choisir le nombre maximum d'élèves et leur disposition).<br />
+	J'ai rajouté aussi différents feedbacks (sonores principalements) lorsque l'on tire et que l'on touche des élèves. <br />
+	Pour faire varier la dynamique du jeu, j'ai également travaillé sur une musique qui s'adapte au niveau de stress : plus celui-ci est élevé, plus la musique s'intensifie. <br />
+	Enfin, je me suis occupé de l'interface graphique et des différents menus à l'aide du travail de notre artiste. <br />
+	
 
-	<ul class="bulletedlist">
-		<li>Placement aléatoire des élèves dans la salle de classe (nombre & disposition)</li>
-		<li>Gestion des feedbacks (sonores principalement)</li>
-		<li>Elements de gameplay dynamiques (musique dynamique)</li>
-		<li>Gestion de l'interface graphique et menus/écrans</li>		
-	</ul>
 	]]>
 	</description>
 	
 	<description lang="en">
 	<![CDATA[
-	This game has been realised during the 2015 Winter WonderJam at the UQAC.
-	<br />It's a rythmical shooter game that matches the following theme : "More fear than harm".
-	<br />Our team was composed of five developers and one artist.
-	<br/>My contributions were :
+	Midterm Exam is a game that has been made during the 2015 Winter WonderJam at UQAC. <br />
+	It's a rythmical shooter game that matches the following theme : "More fear than harm". <br />
+	We play as a teacher that is watching an exam. Students are prone to cheat, play with their cell or make noise, which is stressful for the teacher. <br />
+	His unique solution to destress is to throw chalks at the students ! <br />
+	The more students are disturbing the exam, the higher the stress goes. You must be quick and shoot chalks to lower the stress level as fast as possible ! <br />
 	
-	<ul class="bulletedlist">
-		<li>Students' spawning system (position, general setting of the classroom)</li>
-		<li>Feedback management (especially sounds)</li>
-		<li>Dynamic gameplay elements (dynamic music, evolving with a "stress level")</li>
-		<li>User interface</li>		
-	</ul>
+	For this game, our team was composed of five developers and an artist.<br /><br />
+	
+	I have worked on parts of the gameplay, including the students' spawning system  (you can choose their position, the general setting of the classroom), and the different feedbacks (sounds) when we shoot chalks and hit student. <br />
+	Also, to make the gameplay more dynamic, I've added a dynamic music that changes with the stress level : the higher the stress goes, the more intense the music is. <br />
+	At last, I've also worked on the UI and menus with the help of our artist. <br />
+	
 	]]>
 	</description>
 	
@@ -457,33 +450,63 @@
 <project id="dnk">
 	<name>DayNight Killer</name>
 	<image>images/work/dnk.png</image>
-	<screenshotFolder></screenshotFolder>
+	<screenshots>
+		<screenshotImg>images/screenshots/dnk/0.png</screenshotImg>
+		<screenshotImg>images/screenshots/dnk/1.png</screenshotImg>
+	</screenshots>
 	
 	<description lang="fr">
 	<![CDATA[
-		Projet développé dans le cadre du cours de Conception de jeux vidéos à l'UQAC.
-		<br />C'est un jeu de type survival que nous avons réalisé en équipe de trois, sous le moteur Unity.
-		<br/> Mes tâches étaient les suivantes :
-	
-		<ul class="bulletedlist">
-			<li>Réalisation des mécanismes de jeu générales (joueur, IA) </li>
-			<li>Intégration de feedbacks (musiques, sons notamment)</li>
-			<li>Création de l'interface graphique (menus et HUD) </li>		
-		</ul>
+		Daynight killer est un petit jeu développé dans le cadre du cours de Conception de jeux vidéos à l'UQAC.
+		Il s'agit d'un survival asymétrique que nous avons réalisé en équipe de trois, avec le moteur Unity.<br /> 
+		
+		Des villageois doivent survivre à un démon qui rôde dans leur village durant une nuit (quelques minutes en jeu). <br /> 
+		S'ils survivent jusqu'à l'aube, ils pourront l'éliminer à l'aide de pouvoirs magiques. <br /> 
+		
+		On peut incarner soit un villageois (les autres étant des IA), soit le démon. <br /><br /> 
+		En tant que villageois, nous jouons en vue subjective et nous n'avons aucune arme. Il faut simplement se cacher et fuir le démon. <br/>
+		Un indicateur textuel et une musique dynamique permet de savoir si le démon se trouve près de nous ou non. Plus la musique est stressante, plus il devient urgent de fuir. <br /> 
+		
+		En tant que démon, le jeu se joue à la 3ème personne. Nous disposons de deux attaques ainsi que d'un "radar" permettant de trouver les villageois. <br/> <br/> 
+		
+		Au niveau du développement, je me suis occupé d'un bon nombre d'éléments de gameplay. <br /> 
+		Tout d'abord, les contrôles pour le joueur humain et démon, ensuite des IA simplistes : <br /> 
+		Un villageois IA va choisir un point de passage sur la map et s'y diriger. S'il croise le démon en chemin, il va fuir dans la direction opposée vers un autre point de passage. <br /> 
+		Le démon IA va choisir un des villageois au hasard et se diriger vers lui, s'il en croise un autre il va le prendre en chasse jusqu'à la mort ou jusqu'à ce qu'il soit trop loin (à ce moment il choisir à nouveau un villageois à poursuivre). <br /> 
+		
+		La musique / texte dynamique est une autre feature que j'ai développée et qui permet de jouer un son de plus en plus stressant avec un texte qui change selon la proximité du démon. <br />
+		Aussi, lorsqu'un villageois meurt, un texte apparaît pour prévenir le joueur. Lorsqu'il reste peu de survivants, ou peu de temps au chronomètre, une musique lugubre se déclenche, et lorsqu'il ne reste qu'un humain, une musique métal se joue. <br />
+		Enfin, si les humains survivent jusquà l'aube, une autre musique metal est jouée pour donner un peu d'adrenaline ! <br />
+		
+		À côté de cela, je me suis occupé aussi de l'interface et des menus du jeu. <br />
+
 	]]>
 	</description>
 	
 	<description lang="en">
 	<![CDATA[
-		Game developed for the Video Games Development course at the UQAC.
-		<br />This is an asymetric survival game, realised with Unity. Our team was composed of three developers.
-		<br/>I have worked on the following :
-
-		<ul class="bulletedlist">
-			<li>Gameplay (player controls, AI behaviour, enemy AI)</li>
-			<li>Feedbacks (musics, sounds)</li>
-			<li>User interface (HUD, menus)</li>		
-		</ul>
+		Daynight Killer is a small game made during the game design course at UQAC. <br />
+		It's an asymetrical survival game that we've made in a group of three, using Unity. <br />
+		
+		A demon is lurking in a village during a night (a few minutes in-game). Villagers have to hide and survive until dawn, when they'll get magical powers to help them defeat the demon. <br /><br /> 
+		
+		You can play as one of the villagers (others are AI-controlled) or as the demon.  <br />
+		As a villager, the game is played in a first person perspective. You have no weapon, and you must run and avoid the demon. <br />
+		A text cue and a dynamic music will warn you if the demon gets close, in which case you'll have to run !  <br />
+		
+		As the demon, the game is played in a third person perspective. You have two attacks (slap and bash) and you can sense the presence of your victims thanks to a "radar". <br /><br />
+		
+		My work covered a lot of gameplay elements. <br />
+		First, the basic controls (FPS / TPS) and AI's behaviour.<br />
+		The AI villagers are quite basic, they just choose a random waypoint on the map and head to it. If they come across the demon on their way, they'll pull back to another waypoint in the opposite direction. <br />
+		If they are far enough from the demon, they'll wait a few seconds (to mimic a hiding stance) and choose another waypoint to go. <br />
+		The AI demon will choose a random target and chase him. If he comes across another villager, he will follow the latter until he kills him or until he's too far (he will then choose another victim). <br /><br />
+		
+		Dynamic music / text is another feature that I have developped and that allows to play a sound that gets more and more intense, with a text that changes, depending on how far the demon is. <br />
+		Also, when a villager dies, a text pops in to warn the player. When few villagers are alive, a creepy music starts playing, and when there is only one last human, a metal music starts. <br />
+		If there are still humans at dawn, another pumping metal music is played, and the hunt for the demon can begin ! <br />
+		
+		Besides those gameplay points, I've also worked on the UI / menus.
 	]]>
 	</description>
 	
@@ -542,63 +565,66 @@
 <project id="hmd">
 	<name>Halo Monitor Defense</name>
 	<image>images/work/hmd.png</image>
-	<screenshotFolder></screenshotFolder>
+	<screenshots></screenshots>
 	
 	<description lang="fr">
 	<![CDATA[
 		Projet de fin d'année réalisé durant ma licence en informatique à l'Université de Limoges. 
 		L'objectif était de réaliser une application mobile en 3D, sous une forme de notre choix.
 		Il s'agit ici d'un prototype de Tower Defense que j'ai développé seul sur Android à l'aide d'OpenGL ES et de la librairie JPCT-AE.
-		<br />Voici les principaux mécanismes qui y sont implémentés :
 		
-		<ul class="bulletedlist">
-			<li>Sélection de "blocs" au toucher pour y construire un type de tour à choisir parmi plusieurs</li>
-			<li>Génération des ennemis</li>
-			<li>Pathfinding des ennemis</li>
-			<li>Détection des ennemis par les tours et phase de tir</li>
-		</ul>
+		Étant un grand fan de Halo, j'ai voulu m'inspirer de son univers pour créer ce petit jeu. <br /><br />
+		
+		J'avais dans un premier temps travaillé avec JPCT-AE pour générer toute la partie graphique du jeu (le sol, les différents types de tours, les textures, les sprites des ennemis etc).<br />
+		Les ennemis étaient générés à partir d'un fichier XML où l'on pouvait configurer chaque vague pour y mettre les types d'ennemis désirés avec la quantité désirée. <br />
+		Leur pathfinding était relativement basique puisque le chemin était composé de blocs. Lorsqu'un ennemi arrive vers un bloc, il va ensuite se diriger vers le bloc voisin et ainsi de suite jusqu'à la fin (le chemin est une liste chaînée de blocs). <br /><br />
+		
+		Pour construire des tours, il faut toucher un emplacement dédié près du chemin (des blocs de construction pré-établis), un menu s'ouvre alors et permet de choisir un type de tour (attaque rapide, attaque de zone etc) <br />
+		La détection des ennemis par les tours se fait de la manière suivante : le bloc de construction sur lequel est posé la tour est associé à des blocs du chemin, ce qui détermine la portée de tir. <br />
+		Par exemple, si la portée d'une tour est de 3, cela signifie que les 3 blocs de chemins adjacents au bloc de construction seront atteignables par des tirs. <br />
+		Lorsqu'un ennemi rentre dans la portée, la tour commence à tirer et ne s'arrête que si l'ennemi meurt ou sort de sa portée de tir. <br />
+		
 	]]>
 	</description>
 	
 	<description lang="en">
 	<![CDATA[
-		This is a small 3D tower defense game I have realised during my bachelor's degree in computer science at the University of Limoges.					
-		<br/> I developed it for Android platforms, using OpenGL ES and the JPCT-AE library.
-		<br/>Its main features are :
+		This is a small 3D tower defense game I have made during my bachelor's degree in computer science at the University of Limoges.<br />
+		I developed it for Android platforms, using OpenGL ES and the JPCT-AE library.<br />
 		
-		<ul class="bulletedlist">
-			<li>Building different types of towers on given spots</li>
-			<li>Enemy spawning system</li>
-			<li>Basic enemy pathfinding (chained-list system).
-			<li>Enemy detection and shooting phase mechanisms (towers)</li>
-		</ul>
+		As a big fan of the Halo games, I wanted to take inspiration from its lore to create this small game. <br /><br />
+		
+		First, I have worked with JPCT-AE for to generate the graphical part of the game (textures, ground, towers, sprites etc) <br />
+		Ennemies were generated using an XML file in which we could configure each wave (which type of enemies, how many of them would spawn). <br />
+		Pathfinding was pretty much basic as the path was composed of blocks. When an enemy steps on a block, it will head to the neighbour block, and so on until the end. The path is a linked-list of blocks where each block knows the next one. <br /><br />
+		
+		To build towers, one has to touch a dedicated building block next to the path, a menu pops in and allows you to choose a type of tower (rapid fire, area of damage etc). <br />
+		Enemy detection is done this way : the building block on which a tower is built is linked to a set of blocks on the path, which defines its firing range. <br />
+		For instance, if the range is 3, that means that the three path blocks adjacent to the building block will be reachable. <br />
+		When an enemy gets in range, the tower starts shooting and stops only if he is dead or if he gets out of range. <br />
+		 
 	]]>
 	</description>
-	
-	<links>
-		<link name="github">https://github.com/yannismrad/HaloMonitorDefense</link>
-		<link name="youtube"></link>
+	<links>		
+	<link name="github">https://github.com/yannismrad/HaloMonitorDefense</link>
+	<link name="youtube"></link>
 	</links>
-</project>
-
-
-
-
-
-<!--"Default" project (for wrong urls) -->
-<project id="error">
-	<name>?</name>
-	<description lang="en">
-		Project not found !
-	</description>
-	<description lang="fr">
-		Ce projet n'existe pas !
-	</description>
+	</project>
 	
-	<links>
-		<link name="github"></link>
-		<link name="youtube"></link>
-	</links>
-</project>
+	<!--"Default" project (for wrong urls) -->
+	<project id="error">
+		<name>?</name>
+		<description lang="en">
+			Project not found !
+		</description>
+		<description lang="fr">
+			Ce projet n'existe pas !
+		</description>
+		
+		<links>
+			<link name="github"></link>
+			<link name="youtube"></link>
+		</links>
+	</project>
 
 </projects>

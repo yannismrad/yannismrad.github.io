@@ -9,6 +9,7 @@ h2{font: 400 18px/22px 'Open Sans Bold', Georgia, serif; color: #151515;}
 h3{font: 400 14px/16px 'Open Sans Bold', Georgia, serif; font-weight : bold; color: #151515;}
 ul{margin:0px; padding:0px;}
 ul.bulletedlist{margin-left:15px; padding:0px;}
+ul.nobullet { list-style-type: none;}
 li.nobullet { list-style-type: none;}
 a {text-decoration:none; color: lightGray;}
 a:hover {color:white;}
@@ -133,7 +134,7 @@ a img{border:0px;}
 /* EXPERIENCE SECTION */
 /****************************************************/
 
-#experience{margin:0px 43px; padding-top:115px; text-align: justify;}
+#experience{margin:0px 43px; padding-top:115px; text-align: justify; clear:both;}
 #experience .col{
 	width:235px;
 	float:left;
@@ -143,6 +144,12 @@ a img{border:0px;}
 #experience .col-mid{margin:0px 65px;}
 
 #experience .imgScreenshot {max-width: 100%;  height: auto; margin-right: 5px;} 
+#experience .content{overflow:auto; text-align: justify; text-justify: inter-word;}
+
+#experience .experience-description td
+{
+	padding-right : 15px;
+}
 
 /****************************************************/
 /* JOB SECTION */
@@ -154,7 +161,7 @@ a img{border:0px;}
 	float:left;
 	list-style-position: inside;
 }
-#experience .content{overflow:auto; text-align: justify; text-justify: inter-word;}
+
 #job .content{overflow:auto; text-align: justify; text-justify: inter-word;}
 #job .col-mid{margin:0px 65px;}
 

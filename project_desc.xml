@@ -42,20 +42,20 @@
 	<description lang="en">
 	<![CDATA[
 	Zombie Survival is a multiplayer mod for Garry's Mod (PC) in which a group of humans have to survive against zombies. <br />
-	As a human, you can get new weapons and bonuses by killing zombies, whereas zombies can unlock new classes by klling humans. <br />
-	If you kill enough humans, you can redeem and keep fighting the undead as a human again ! <br /><br />
+	As a human, you can get new weapons and bonuses by killing zombies, whereas zombies can unlock new classes by killing humans. <br />
+	After killing enough humans, you can redeem and keep fighting the undead as a human again ! <br /><br />
 	
-	The original mod had a run & gun / arcade styled gameplay, but since then it became more realistic, with an emphasis on barricading. <br />
+	The original mod had a run & gun / arcade styled gameplay, but over the years it took a more realistic approach, with an emphasis on barricading. <br />
 	Redeemed Edition is a full re-coding of the original mod, which is meant to bring the old school gameplay back. <br />
-	Future content will be added on top of the core gameplay. <br /><br />
+	The core gameplay will remain the same, and I plan to add new content (new unlockables, challenge system) on top of it.<br /><br />
 	
-	With this project, coded in LUA, I wanted to challenge myself and revive this game on which I had tons of fun with as a teen. <br />
+	With this project, coded in LUA, I wanted to challenge myself and revive this game on which I had tons of fun during my teenage years. <br />
 	Making it a mod and not a standalone game allows me to focus on the gameplay without the hassle of managing the artistic and networking parts, which both are provided by Garry's Mod engine and content. <br />
 	
-	I developed the mod using an old code made by Clavus, Ywa and Deluvas - developers of the Mr Green Gaming community, which will host the mod - as a base, and a more recent one by Jetboom, ZS' original creator. <br />
-	The old code being deprecated and broken with the current version of Garry's Mod, and the new one being too different from what I wanted to achieve, I started everything from scratch taking inspiration from the old code, and using the necessary tools from the second to be able to run it on Garry's Mod. <br /><br />
+	I've developed the mod using an old code made by Clavus, Ywa and Deluvas - developers of the Mr Green Gaming community, which will host the mod - as a base, and a more recent one by Jetboom, ZS' original creator. <br />
+	The old code being deprecated and broken with the current version of Garry's Mod, and the new one being too different from what I wanted to achieve, I started everything from scratch taking inspiration from the old one, and took the necessary tools from the other to be able to run it on Garry's Mod. <br /><br />
 
-	The project started in 2020 and still in progress, here are the main features done at the moment : <br />
+	The project started in 2020 and is still in progress, here are the main features done at the moment : <br />
 	<ul class="bulletedlist">
 		<li>Human and zombie gameplay</li>
 		<li>Core gameplay mechanics Mécaniques (weapons unlocking, zombie classes, redeeming)</li>
@@ -65,7 +65,7 @@
 	</ul>
 	<br />
 	
-	A first public demo took place in November 2020, another one will probably be planned around spring 2021 with a release planned after that. <br /><br />
+	A first public demo took place in November 2020, another one will probably be planned around spring 2021 with a release planned shortly after that. <br /><br />
 	Contact me if you wish to access the game's Github. <br />
 	]]>
 	</description>

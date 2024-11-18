@@ -174,7 +174,7 @@ function processData(data)
 			
 			for(var i=0; i< screenshotsTab.length;i++)
 			{
-				var imgTag = '<a class="imgScreenshot" target="_blank" href="images/screenshots/'+projectId+'/'+i+'.png"><img width="200" height = "150"  alt ="screenshot" src="'+screenshotsTab[i]+'"></a>'
+				var imgTag = '<a class="imgScreenshot" target="_blank" href="images/screenshots/'+projectId+'/'+i+'.png"><img width="400" height = "200"  alt ="screenshot" src="'+screenshotsTab[i]+'"></a>'
 				$("#screenshotsDiv").append(imgTag);
 			}
 		

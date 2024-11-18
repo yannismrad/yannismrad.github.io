@@ -5,7 +5,7 @@ body{
 	color: #151515;
 }
 h1{font: 400 40px/50px 'TF2 Build', 'Bree Serif', Georgia, serif; color: #151515;}
-h2{font: 400 18px/22px 'Open Sans Bold', Georgia, serif; color: #151515;}
+h2{font: 400 20px/24px 'TF2 Build', Georgia, serif; color: #151515;}
 h3{font: 400 14px/16px 'Open Sans Bold', Georgia, serif; font-weight : bold; color: #151515;}
 ul{margin:0px; padding:0px;}
 ul.bulletedlist{margin-left:15px; padding:0px;}
@@ -44,6 +44,10 @@ a img{border:0px;}
 	height: 200px;
 }
 
+#work .content h2 {font: 400 20px/24px 'TF2 Build', Georgia, serif; color: #151515; text-align: center;}
+
+.work hr {color: #0D1368;}
+
 
 /****************************************************/
 /* HEADER */
@@ -60,7 +64,7 @@ a img{border:0px;}
 	margin: 0 0 0 -475px;
 }
 #header #logo{
-	padding-top: 15px;
+	padding-top: 20px;
 	float:left;
 }
 
@@ -109,7 +113,7 @@ a img{border:0px;}
 	height:26px; 
 	background:url(images/sm-linkedin-icon.png) no-repeat;
 }
-#about .content{overflow:auto; text-align: justify;}
+#about .content{overflow:auto; text-align: justify; text-justify: inter-word;}
 #about .content img{float:left; margin-right:40px;}
 #about .content #profile-photo{border-radius: 50%;}
 

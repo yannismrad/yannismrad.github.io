@@ -1,6 +1,147 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <projects>
 
+<!--RoR : Hostile Worlds-->
+<project id="ror">
+	<name>Risk of Rain : Hostile Worlds</name>
+	<image>images/work/zs.png</image>
+	<screenshots>
+		<screenshotImg>images/screenshots/ror/0.gif</screenshotImg>
+		<screenshotImg>images/screenshots/ror/1.gif</screenshotImg>
+		<screenshotImg>images/screenshots/ror/2.gif</screenshotImg>
+		<screenshotImg>images/screenshots/ror/3.gif</screenshotImg>
+	</screenshots>
+	<description lang="fr">
+	<![CDATA[
+	Risk of Rain : Hostile Worlds est une déclinaison mobile de la saga Risk of Rain s'inscrivant entre les deux premiers opus.<br />
+	Il s'agit d'un rogue-like possédant un mode campagne et un mode coop. Au fil des missions nous pouvons obtenir de nouveaux survivants, de l'équipement et toutes sortes d'améliorations pour nos personnages. <br />
+	La rejouabilité était assurée par la présence de différents modes de difficultés, et par le coté aleátoire des missions / zones dans lesquelles on devait évoluer. <br />
+	Au niveau technique, le jeu était développé sous Unity et avec le moteur multijoueur Photon Quantum. <br />
+	
+	Je me suis occupé de plusieurs morceaux dont voici les principaux : <br />
+	<ul class="bulletedlist">
+		<li><b>Le système d'objectifs : </b></li>
+		Bâti du côté de Quantum, ce système permettait d'avoir des objectifs consitutés de tâches que l'on pouvait compléter en ordre fixe ou de manière plus libre. <br />
+		Je l'ai rendu le plus modulaire possible afin de pouvoir rajouter facilement différents types d'objectifs et de tâches. <br />
+		Côté tooling, j'ai travaillé sur un outil qui permettait in-fine aux game designers de construire facilement leur liste d'objectifs / tâches et les paramètres qui vont avec. <br />
+		
+		<li><b>L'économie du jeu : </b></li>
+		Un magasin permettait d'acheter des monnaies, des objets ou personnages en échange d'argent virtuel ou réel (IAP). <br />
+		Il y avait également un magasin de type "gacha" où l'on pouvait utiliser des monnaies pour ouvrir des lootboxes donnant des personnages ou des items d'amélioration pour ces derniers. <br />
+		Le backend reposait sur Playfab et sur des fonctions Azure. </br>
+		J'ai intégré la totalité du flow pour ces deux features : un outil qui permet aux designers de gérer l'intégralité du contenu du shop et des gachas puis de les déployer sur Playfab, la logique pour les achats côté Unity et Azure Functions, et l'intégration du UI.
+		
+		<li><b>Mode de jeu "Trials" : </b></li>
+		Dans le jeu nous avions un outil / système de quêtes permettant d'avoir différents types de quêtes (quotidiennes, hebdomadaire, succès...). <br />
+		De ce système, j'en ai crée un dérivé permettant de gérer un mode de jeu nommé Trials consistant à accomplir des missions le plus rapidement possible pour avoir des récompenses attribuées selon le temps de jeu. <br />
+		Chaque trial est une quête qui n'est visible qu'à certains moments (durant un évènement par exemple) et qui n'est pas affichée avec les autres quêtes, mais dans un UI dédié.
+		
+		<li><b>Tooling divers : </b></li>
+		J'ai réalisé des outils permettant aux game designers de manipuler certains éléments ou paramètres du jeu (contenu des coffres, taux d'apparitions d'évènements, import de données...)
+	</ul>
+	
+	]]>
+	</description>
+	
+	<description lang="en">
+	<![CDATA[
+	Risk of Rain: Hostile Worlds is a mobile spin-off of the Risk of Rain saga, set between the first two installments.<br />
+	It is a rogue-like featuring a campaign mode and a co-op mode. Throughout the missions, players can unlock new survivors, equipment, and various upgrades for their characters. <br />
+	Replayability was ensured through the inclusion of different difficulty levels and the randomness of missions/zones to explore. <br />
+	From a technical perspective, the game was developed using Unity and the Photon Quantum multiplayer engine. <br />
+	
+	I worked on several aspects of the game, including the following key contributions: <br />
+	<ul class="bulletedlist">
+		<li><b>The objective system: </b></li>
+		Built on Quantum, this system allowed for objectives consisting of tasks that could be completed either in a fixed order or more freely. <br />
+		I made it as modular as possible to easily add various types of objectives and tasks.<br />
+		On the tooling side, I developed a tool that allowed game designers to easily construct their list of objectives/tasks and associated parameters. <br />
+		
+		<li><b>Game economy: </b></li>
+		A shop allowed players to purchase currencies, items, or characters using virtual or real money (IAP). <br />
+		There was also a "gacha"-style shop where currencies could be used to open loot boxes that granted characters or upgrade items for them. <br />
+		The backend relied on PlayFab and Azure functions. <br />
+		I implemented the entire flow for these two features: a tool for designers to manage the shop and gacha content and deploy it to PlayFab, the logic for purchases in Unity and Azure Functions, and the UI integration.
+		
+		<li><b>Game mode "Trials": </b></li>
+		The game included a quest system allowing for various types of quests (daily, weekly, achievements, etc.). <br />
+		I created a derivative system to manage a game mode called Trials, which involved completing missions as quickly as possible to earn rewards based on time. <br />
+		Each trial is a quest visible only at specific times (e.g., during an event) and displayed in a dedicated UI separate from other quests.
+		
+		<li><b>Various tooling: </b></li>
+		I developed tools enabling game designers to manipulate specific game elements or parameters (chest contents, event spawn rates, data imports, etc.).
+	</ul>
+	
+	]]>
+	</description>
+	
+	<links>
+		<link name="youtube">TolpGVuJQZw</link>
+	</links>
+</project>
+
+<!--Harry Potter Wizards Unite-->
+<project id="hpwu">
+	<name>Harry Potter : Wizards Unite</name>
+	<image>images/work/hpwu.png</image>
+	<screenshots>
+		<screenshotImg>images/screenshots/hpwu/0.gif</screenshotImg>
+		<screenshotImg>images/screenshots/hpwu/1.png</screenshotImg>
+		<screenshotImg>images/screenshots/hpwu/2.png</screenshotImg>
+	</screenshots>
+	<description lang="fr">
+	<![CDATA[
+	Harry Potter : Wizards Unite est un jeu mobile développé par Niantic et Warner Bros Games, et supporté en partie par Frima pour le développement LiveOps.<br />
+	Il s'agit d'un jeu en réalité augmentée similaire à Pokémon Go, où le joueur peut se promener dans la vraie vie afin de croiser des personnages de l'univers d'Harry Potter, de combattre des créatures ou encore de dénicher
+	des objets magiques dans l'environnement. <br />
+	Certaines séquences, comme les combats, se déroulent en RA. Il faut alors orienter la caméra pour trouver l'adversaire où la créature rencontrée, et effectuer différents gestes pour lancer des sorts.
+	
+	Sur ce projet, j'ai principalement travaillé sur développement de certaines updates et leur déploiement : <br />
+	<ul class="bulletedlist">
+		<li><b>Combats contre des ennemis spéciaux :</b></li>
+		En reprenant le système de combats existant, nous avons ajouté une petite couche de gameplay similaire à des instances / donjons que l'on peut trouver dans un MMORPG.<br />
+		On entre dans une instance où le but sera de défaire un certain nombre d'ennemis le plus vite possible par exemple.
+		
+		<li><b>Déploiement de mises à jours : </b></li>
+		Pas une feature à proprement parler, mais il s'agissait de s'occuper de la partie Live Ops / déploiement des nouvelles mises à jour et des patchs en utilisant le pipeline mis en place par Niantic et WB Games.
+		
+		<li><b>Intégration d'un plugin de chat social : </b></li>
+		Niantic souhaitait tester l'ajout d'un système de chat social dans le jeu afin de l'intégrer éventuellement sur d'autres titres. <br />
+		Je me suis donc occupé d'intégrer ce plugin et la partie UI qui permettait d'y accéder.
+	</ul>
+	
+	]]>
+	</description>
+	
+	<description lang="en">
+	<![CDATA[
+	Harry Potter: Wizards Unite is a mobile game developed by Niantic and Warner Bros Games, for which Frima did LiveOps support.<br />
+	It's an AR game similar to Pokémon Go, where players can explore the real world to encounter characters from the Harry Potter universe, battle creatures, or find magical objects in their surroundings. <br />
+	Certain sequences, such as battles, take place in AR. Players must rotate their camera to find the opponent or creature encountered and perform various gestures to cast spells.
+	
+	On this project, I have primarily worked on the development of updates and the live ops support : <br />
+	<ul class="bulletedlist">
+		<li><b>Battles against special enemies :</b></li>
+		Reusing the existing combat system, we've added a small gameplay layer similar to instances/dungeons found in MMORPGs. <br />
+		Players enter an instance where the goal can be to defeat a certain number of enemies as quickly as possible, for example.
+		
+		<li><b>Deployment of updates : </b></li>
+		Not a feature per se, but it involved handling the Live Ops / deployment of new updates and patches using the pipeline set up by Niantic and WB Games.
+		
+		<li><b>Social chat plugin integration : </b></li>
+		Niantic wanted to test the addition of a social chat system in the game with the possibility of integrating it into other titles.<br />
+		I handled the integration of this plugin and the UI component that provided access to it.
+	</ul>
+	
+	]]>
+
+	</description>
+	
+	<links>
+		<link name="youtube">Odv4OR24S_s</link>
+	</links>
+</project>
+
 <!--ZS Redeemed edition -->
 <project id="zs">
 	<name>Zombie Survival : Redeemed Edition</name>
@@ -19,53 +160,54 @@
 	A l'origine le mod avait un gameplay de type gun and run / arcade, mais la version principale du jeu s'est depuis orientée sur un aspect survie / barricade plus poussé.<br />
 	Redeemed Edition en est une réecriture complète, visant à retourner à un gameplay arcade avec ses particularités. De futurs ajouts viendront bonifier son contenu. <br /><br />
 	
-	Avec ce projet développé en LUA, je me suis lancé pour défi de faire revivre ce jeu qui m'avait occupé durant de nombreuses soirées il y a une décennie ! <br />
-	Le fait que ce soit un mod et non un jeu "standalone" permet de m'affranchir des contraintes artistiques et des problématiques liées au jeu en réseau : Garry's Mod fournit les outils et le contenu nécessaire pour cela. <br />
-	Je me suis occupé de l'intégralité du développement en m'aidant d'un ancien code fait par Clavus, Ywa et Deluvas - anciens développeurs de la communauté Mr Green Gaming qui hébergera le jeu - et du code plus récent fait par Jetboom, le créateur original du mod. <br />
+	Avec ce projet développé entièrement en LUA, je me suis lancé pour défi de faire revivre ce jeu qui m'avait occupé durant de nombreuses soirées il y a fort longtemps ! <br />
+	Le fait que ce soit un mod et non un jeu "standalone" permet de m'affranchir des contraintes artistiques et des problématiques liées au jeu en réseau : le jeu me fournit les outils et le contenu nécessaire pour cela. <br />
+	Je me suis occupé de l'intégralité du développement en m'aidant d'un ancien code fait par Clavus, Ywa et Deluvas - anciens développeurs de la communauté Mr Green Gaming qui héberge le mod - et du code plus récent fait par Jetboom, le créateur du mod original. <br />
 	L'ancien code étant déprécié et non fonctionnel, et le nouveau étant trop différent de ce que je voulais faire, j'ai choisi de partir de zéro en m'inspirant du premier et en prenant les outils nécessaires issus du second pour le faire fonctionner. <br /><br />
 
 	Le projet, débuté en 2020, est toujours en cours de développement, et voici les principaux travaux accomplis à ce jour : <br />
 	<ul class="bulletedlist">
 		<li>Gameplay des humains et des zombies</li>
-		<li>Mécaniques principales (déblocage des armes, déblocage des classes, système de "redeem")</li>
+		<li>Mécaniques principales (déblocage des armes, déblocage des classes, résurrection des zombies)</li>
+		<li>Système de "perks" par arme : plus on utilise une arme, plus celle-ci s'améliore (dégâts bonus, munitions, soins etc). Ces perks ne sont valides que pour la partie en cours.
 		<li>Interface utilisateur et menus de choix de classe et d'options</li>
-		<li>Backend et "Services" permettant de gérer l'information des joueurs (scores, temps joué etc) et leur inventaire (en cours de développement)</li>
-		<li>Implémentation d'un magasin permettant d'acheter des améliorations et des objets cosmétiques (en cours)</li>
+		<li>Backend et "Services" permettant de gérer l'information des joueurs (scores, temps joué etc) et leur inventaire</li>
+		<li>Magasin in-game permettant d'acheter des améliorations et des objets cosmétiques</li>
+		<li>Système de missions quotidiennes et de succès</li>
+		<li>Joueurs bots (librairie DRGBase) : la librairie fournit des comportements de base auxquels j'ai rajouté les éléments particuliers de ZS.</li>
 	</ul>
 	<br />
 	
-	Une première démo a eu lieu en novembre 2020, et une prochaine aura probablement lieu d'ici le printemps 2021 avec une sortie en bout de ligne. <br /><br />
 	Pour accéder au Github du jeu, contactez moi.<br />
 	]]>
 	</description>
 	
 	<description lang="en">
 	<![CDATA[
-	Zombie Survival is a multiplayer mod for Garry's Mod (PC) in which a group of humans have to survive against zombies. <br />
-	As a human, you can get new weapons and bonuses by killing zombies, whereas zombies can unlock new classes by killing humans. <br />
-	After killing enough humans, you can redeem and keep fighting the undead as a human again ! <br /><br />
+	Zombie Survival is a multiplayer mod for the game Garry's Mod (PC) where humans must survive against zombies.<br />
+	As a human, you can obtain new weapons by killing zombies, and as a zombie, eliminating humans allows you to unlock new classes. <br />
+	With enough humans killed, a zombie can respawn and rejoin the fight. <br /><br />
+	Originally, the mod had a gun-and-run/arcade-style gameplay, but the main version of the game has since shifted towards a more survival/barricade-focused approach.<br />
+	Redeemed Edition is a complete rewrite aimed at returning to an arcade gameplay style with its unique features. Future updates will further enhance its content. <br /><br />
 	
-	The original mod had a run & gun / arcade styled gameplay, but over the years it took a more realistic approach, with an emphasis on barricading. <br />
-	Redeemed Edition is a full re-coding of the original mod, which is meant to bring the old school gameplay back. <br />
-	The core gameplay will remain the same, and I plan to add new content (new unlockables, challenge system) on top of it.<br /><br />
-	
-	With this project, coded in LUA, I wanted to challenge myself and revive this game on which I had tons of fun during my teenage years. <br />
-	Making it a mod and not a standalone game allows me to focus on the gameplay without the hassle of managing the artistic and networking parts, which both are provided by Garry's Mod engine and content. <br />
-	
-	I've developed the mod using an old code made by Clavus, Ywa and Deluvas - developers of the Mr Green Gaming community, which will host the mod - as a base, and a more recent one by Jetboom, ZS' original creator. <br />
-	The old code being deprecated and broken with the current version of Garry's Mod, and the new one being too different from what I wanted to achieve, I started everything from scratch taking inspiration from the old one, and took the necessary tools from the other to be able to run it on Garry's Mod. <br /><br />
+	Developed entirely in LUA, I challenged myself with this project to revive the game that kept me entertained for many evenings a long time ago! <br />
+	The fact that it's a mod and not a standalone game frees me from artistic constraints and networking issues: the game provides the necessary tools and content. <br />
+	I handled the entirety of the development, drawing on old code by Clavus, Ywa, and Deluvas-former developers from the Mr Green Gaming community that hosted the mod-and newer code by Jetboom, the original creator of the mod. <br />
+	With the old code being deprecated and non-functional, and the new code being too different from what I wanted to achieve, I chose to start from scratch, drawing inspiration from the former and using necessary tools from the latter to make it work. <br /><br />
 
-	The project started in 2020 and is still in progress, here are the main features done at the moment : <br />
+	Started in 2020, the project is still in development. Here are the main tasks accomplished to date: <br />
 	<ul class="bulletedlist">
-		<li>Human and zombie gameplay</li>
-		<li>Core gameplay mechanics Mécaniques (weapons unlocking, zombie classes, redeeming)</li>
-		<li>UI and menus for zombie classes and options</li>
-		<li>Backend and services for managing player data (score, time played etc) and their inventory (work in progress)</li>
-		<li>Implementation of an in-game shop that allows to buy upgrades and cosmetic items (work in progress)</li>
+		<li>Gameplay for humans and zombies</li>
+		<li>Core mechanics (weapon unlocks, class unlocks, zombie resurrection)</li>
+		<li>Weapon perk system: the more you use a weapon, the more it improves (bonus damage, ammunition, healing, etc.). These perks are only valid for the current session.</li>
+		<li>User interface and class/option selection menus</li>
+		<li>Backend and "services" for managing player information (scores, playtime, etc.) and their inventory</li>
+		<li>In-game shop for purchasing upgrades and cosmetic items</li>
+		<li>Daily missions and achievement system</li>
+		<li>Bot players (DRGBase library): the library provides basic behaviors, to which I added the unique elements of ZS.</li>
 	</ul>
 	<br />
 	
-	A first public demo took place in November 2020, another one will probably be planned around spring 2021 with a release planned shortly after that. <br /><br />
 	Contact me if you wish to access the game's Github. <br />
 	]]>
 	</description>

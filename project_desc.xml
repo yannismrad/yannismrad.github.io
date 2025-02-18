@@ -21,7 +21,7 @@
 	Je me suis occupé de plusieurs morceaux dont voici les principaux : <br />
 	<ul class="bulletedlist">
 		<li><b>Le système d'objectifs : </b></li>
-		Bâti du côté de Quantum, ce système permettait d'avoir des objectifs consitutés de tâches que l'on pouvait compléter en ordre fixe ou de manière plus libre. <br />
+		Bâti du côté de Quantum, ce système permettait d'avoir des objectifs constitués de tâches que l'on pouvait compléter en ordre fixe ou de manière plus libre. <br />
 		Je l'ai rendu le plus modulaire possible afin de pouvoir rajouter facilement différents types d'objectifs et de tâches. <br />
 		Côté tooling, j'ai travaillé sur un outil qui permettait in-fine aux game designers de construire facilement leur liste d'objectifs / tâches et les paramètres qui vont avec. <br />
 		

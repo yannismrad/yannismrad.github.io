@@ -35,6 +35,11 @@ a img{border:0px;}
 
 /** Work description table */
 
+.work-description
+{
+	padding-left : 15px;
+}
+
 .work-description td
 {
 	padding-right : 15px;

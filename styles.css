@@ -1,11 +1,12 @@
 body{
-	background:#333333 url(images/bg.png);
-	margin:0px;
-	font: 400 12px/22px 'Open Sans', Verdana, Helvetica, sans-serif;
+	background-color: #000000;
+	background-size: 40px 40px;
+	background-image: repeating-linear-gradient(45deg, #2d3295 0, #2d3295 4px, #000000 0, #000000 50%);
+	font: 400 14px/24px 'Roboto', Verdana, Helvetica, sans-serif;
 	color: #151515;
 }
 h1{font: 400 40px/50px 'TF2 Build', 'Bree Serif', Georgia, serif; color: #151515;}
-h2{font: 400 20px/24px 'TF2 Build', Georgia, serif; color: #151515;}
+h2{font: 400 20px/24px 'TF2 Build', Georgia, serif; color: #white;}
 h3{font: 400 14px/16px 'Open Sans Bold', Georgia, serif; font-weight : bold; color: #151515;}
 ul{margin:0px; padding:0px;}
 ul.bulletedlist{margin-left:15px; padding:0px;}
@@ -44,7 +45,15 @@ a img{border:0px;}
 	height: 200px;
 }
 
-#work .content h2 {font: 400 20px/24px 'TF2 Build', Georgia, serif; color: #151515; text-align: center;}
+#work .content h2 {font: 400 20px/24px 'Roboto', Georgia, serif; color: #151515; text-align: center; font-weight:bold;}
+
+#work .content img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#work .content  img:hover {
+  transform: scale(1.05);
+}
 
 .work hr {color: #0D1368;}
 
@@ -73,12 +82,13 @@ a img{border:0px;}
 	height: 70px;
 }
 
-#header #main-menu{float:left; padding-top:45px;}
+#header #main-menu{float:left; padding-top:40px; padding-left: 50px;}
 #header #main-menu li{
 	float:left;
 	list-style:none;
 	margin-left: 20px;
-	font: 400 15px/18px 'Open Sans Bold', Georgia, serif;
+	font: 400 16px/18px 'Roboto', Georgia, serif;
+	font-weight: bold
 }
 
 #header #header-title {text-align:center; color: #ffffff;}
